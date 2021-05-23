@@ -14,8 +14,8 @@ Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://
 
 ### Demo
 
-Homepage: https://insertapps.com/demo/pehtheme/
-Single page : https://insertapps.com/demo/pehtheme/single.html
+- Homepage: https://insertapps.com/demo/pehtheme/
+- Single page : https://insertapps.com/demo/pehtheme/single.html
 
 ### Browser Support
 
