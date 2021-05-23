@@ -1,13 +1,33 @@
 # Pehtheme
 Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://basscss.com/) lightning fast modular CSS with no side effects.
 
-### Feature
+### Features
 
-- Nav menu scroll
-- Material sidenav
-- Horizontal mouse wheel scrolling
-- Card
+- Lighter and faster
+- Nav menu scroll (desktop & mobile view) 
+- Material sidenav (mobile view) 
+- Horizontal mouse wheel scrolling (desktop) 
+- Support and use SVG icon Bootstrap.
+- Responsive footer view
+- Pure JavaScript
+- No jQuery dependency 
 
 ### Demo
 
-https://insertapps.com/demo/pehtheme/
+Homepage: https://insertapps.com/demo/pehtheme/
+Single page : https://insertapps.com/demo/pehtheme/single.html
+
+### Browser Support
+
+- Google Chrome
+- Firefox
+- Safari
+- etc
+
+### FAQ
+
+**Why used Basscss?**
+
+_Basscss is a lightweight collection of immutable utilities designed for speed, clarity, performance, and scalability._
+
+Read more [https://github.com/basscss/basscss](https://github.com/basscss/basscss)
