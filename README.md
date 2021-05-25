@@ -37,3 +37,7 @@ Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://
 _Basscss is a lightweight collection of immutable utilities designed for speed, clarity, performance, and scalability._
 
 Read more [https://github.com/basscss/basscss](https://github.com/basscss/basscss)
+
+### Resource
+
+All images from [Freebiespic.com](https://freebiespic.com/)
