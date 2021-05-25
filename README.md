@@ -4,8 +4,8 @@ Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://
 ### Features
 
 - Lighter and faster
-- Nav menu scroll (desktop & mobile view) 
-- Material sidenav (mobile view) 
+- Nav menu horizontal scroll (desktop & mobile view) 
+- Material sidenav responsive width (mobile view) 
 - Horizontal mouse wheel scrolling (desktop) 
 - Support and use SVG icon Bootstrap.
 - Responsive footer view
