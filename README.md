@@ -11,12 +11,17 @@ Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://
 - Support and use SVG [Bootstrap Icons](https://icons.getbootstrap.com/).
 - Responsive footer view
 - Pure JavaScript
-- No jQuery dependency 
+- No jQuery dependency
+
+### Documentation
+
+- [Indonesian](https://insertapps.com/pehtheme/)
+- English
 
 ### Demo
 
-- Homepage: https://insertapps.com/demo/pehtheme/
-- Single page : https://insertapps.com/demo/pehtheme/single.html
+- Homepage: https://fauzanmy.github.io/pehtheme/
+- Single page : https://fauzanmy.github.io/pehtheme/single.html
 
 ### Browser Support
 
