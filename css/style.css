@@ -54,7 +54,7 @@ License: MIT License
     --button-big-padding-x: 1.25rem;
     --button-narrow-padding-x: .5rem;
     /*Border */
-    --border-radius: 3px;
+    --border-radius: 5px;
     /* Darken */
     --darken-1: rgba(0, 0, 0, .0625);
     --darken-2: rgba(0, 0, 0, .125);
@@ -251,6 +251,10 @@ hr {
 
 .transition {
     transition: 0.4s
+}
+
+.shadow {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
 }
 
 .box-shadow {
@@ -1847,7 +1851,7 @@ https://github.com/basscss/addons
 }
 
 .rounded {
-    border-radius: 3px
+    border-radius: var(--border-radius)
 }
 
 .circle {
@@ -1855,19 +1859,19 @@ https://github.com/basscss/addons
 }
 
 .rounded-top {
-    border-radius: 3px 3px 0 0
+    border-radius: var(--border-radius --border-radius 0 0)
 }
 
 .rounded-right {
-    border-radius: 0 3px 3px 0
+    border-radius: var(0 --border-radius --border-radius 0)
 }
 
 .rounded-bottom {
-    border-radius: 0 0 3px 3px
+    border-radius: var(0 0 --border-radius --border-radius)
 }
 
 .rounded-left {
-    border-radius: 3px 0 0 3px
+    border-radius: var(--border-radius 0 0 --border-radius)
 }
 
 .not-rounded {

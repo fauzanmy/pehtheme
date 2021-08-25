@@ -71,7 +71,13 @@ document.querySelectorAll('.mouse-wheel').forEach( item => {
 	})
 });
 
-
+const slide = new Siema ({
+	duration: 250,
+	loop: true,
+});
+setInterval(() => slide.next(), 5000);
+document.querySelector('.prev').addEventListener('click', () => slide.prev());
+document.querySelector('.next').addEventListener('click', () => slide.next());
 
 
 
