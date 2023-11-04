@@ -1,21 +1,25 @@
+Version 2.0.0
+	November, 04 2023
+	- Porting from basscss to tailwindcss
+
 Version 1.0.1
-August, 25 2021
-- Add Siema - Lightweight and simple carousel with no dependencies
-- Design respondive card
+	August, 25 2021
+	- Add Siema - Lightweight and simple carousel with no dependencies
+	- Design respondive card
 
 Version 1.0.0
-Mei, 11 2021
-- Release live demo
+	Mei, 11 2021
+	- Release live demo
 
 Version 1.0.0
-Mei, 10 2021
-- Js mouse wheel function multiple element
+	Mei, 10 2021
+	- Js mouse wheel function multiple element
 
 Version 0.1.7
-Mei, 09 2021
-- Move hover opacity in the .box class .box to .pointer class
-- Add dummy content
-- Add sidebar dummy
+	Mei, 09 2021
+	- Move hover opacity in the .box class .box to .pointer class
+	- Add dummy content
+	- Add sidebar dummy
 
 Version 0.1.0
-April, 30 2021
+	April, 30 2021

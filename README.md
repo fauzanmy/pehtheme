@@ -1,5 +1,5 @@
-# Pehtheme
-Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://basscss.com/) lightning fast modular CSS with no side effects.
+# Pehtheme v2.0.0
+Pehtheme mobile-first HTML template for blog, news build with TailwindCSS.
 
 ### Features
 
@@ -31,12 +31,6 @@ Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://
 - etc
 
 ### FAQ
-
-**Why used Basscss?**
-
-_Basscss is a lightweight collection of immutable utilities designed for speed, clarity, performance, and scalability._
-
-Read more [https://github.com/basscss/basscss](https://github.com/basscss/basscss)
 
 ### Resource
 
