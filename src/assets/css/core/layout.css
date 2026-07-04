@@ -1,0 +1,12 @@
+/* layout.css */
+@layer components {
+  .wrapper {
+    @apply w-full mx-auto px-4;
+  }
+  .inner {
+    @apply w-full;
+  }
+  .grid {
+    @apply grid gap-4;
+  }
+}

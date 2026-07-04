@@ -1,7 +1,1 @@
-import { domReady } from './chunks/chunk-7YIEE45G.js';
-
-// src/assets/js/home.js
-domReady(async () => {
-	await import('./chunks/carousel-CN55WW2A.js');
-	await import('./chunks/marquee-3IQMBAD5.js');
-});
+import{a}from"./chunks/chunk-B3MAZRHF.js";a(async()=>{await import("./chunks/carousel-UJJLY6E2.js"),await import("./chunks/marquee-5EZBCBEZ.js")});

@@ -1,10 +1,47 @@
-@import 'tailwindcss';
+/**
+ * Single CSS
+ *
+ * Entry point for single content pages.
+ *
+ * Used by:
+ * - Single Post
+ * - Attachment (optional)
+ *
+ * Dependencies:
+ * - critical.css (inline)
+ *
+ * Import Order:
+ * 1. Tailwind Layers
+ * 2. Theme
+ * 3. Layouts
+ * 4. Components
+ * 5. Pages
+ * 6. Utilities
+ *
+ * @package UIAceh
+ * @since 1.5.2
+ */
 
-@import './components/post-header.css';
-@import './components/post-content.css';
-@import './components/post-content-media.css';
-@import './components/post-content-block.css';
-@import './components/post-footer.css';
-@import './components/comment-list.css';
-@import './components/comment-form.css';
-@import './components/related-posts.css';
+/* --------------------------------------------------------------------------
+ * Tailwind Layers
+ * ----------------------------------------------------------------------- */
+
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* --------------------------------------------------------------------------
+ * Theme
+ * ----------------------------------------------------------------------- */
+
+@import "./core/theme.css";
+
+/* --------------------------------------------------------------------------
+ * Components
+ * ----------------------------------------------------------------------- */
+
+
+ /* --------------------------------------------------------------------------
+ * Utilities
+ * ----------------------------------------------------------------------- */
+
+@import "./core/utilities.css";

@@ -15,7 +15,15 @@
 
 	<meta name="description" content="{{ site.description }}">
 	
-	<link rel="stylesheet" href="/assets/css/app.css">
+	<link rel="stylesheet" href="/assets/css/critical.css">
+
+	{% if pageCss == 'single' %}
+		<link rel="stylesheet" href="/assets/css/single.css">
+	{% else %}
+		<link rel="stylesheet" href="/assets/css/page.css">
+	{% endif %}
+
+	<link rel="icon" href="/assets/icons/egg-fried.svg" type="image/svg+xml">
 
 </head>
 

@@ -7,14 +7,27 @@
 	"packageManager": "pnpm@11.8.0",
 	"scripts": {
 		"dev:11ty": "eleventy --serve",
-		"dev:tailwind": "tailwindcss -i ./src/assets/css/app.css -o ./dist/assets/css/app.css --watch",
+
+		"dev:tailwind:critical": "tailwindcss -i ./src/assets/css/critical.css -o ./dist/assets/css/critical.css --watch",
+		"dev:tailwind:page": "tailwindcss -i ./src/assets/css/page.css -o ./dist/assets/css/page.css --watch",
+		"dev:tailwind:single": "tailwindcss -i ./src/assets/css/single.css -o ./dist/assets/css/single.css --watch",
+		"dev:tailwind": "concurrently -n critical,page,single -c cyan,magenta,blue \"pnpm dev:tailwind:critical\" \"pnpm dev:tailwind:page\" \"pnpm dev:tailwind:single\"",
+
 		"watch:js": "esbuild ./src/assets/js/main.js ./src/assets/js/home.js --bundle --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js --watch",
+
 		"dev": "concurrently -n eleventy,tailwind -c yellow,cyan \"pnpm dev:11ty\" \"pnpm dev:tailwind\"",
 		"devjs": "concurrently -n eleventy,tailwind,js -c yellow,cyan,magenta \"pnpm dev:11ty\" \"pnpm dev:tailwind\" \"pnpm watch:js\"",
+
 		"build:11ty": "eleventy",
-		"build:tailwind": "tailwindcss -i ./src/assets/css/app.css -o ./dist/assets/css/app.css --minify",
+
+		"build:tailwind:critical": "tailwindcss -i ./src/assets/css/critical.css -o ./dist/assets/css/critical.css --minify",
+		"build:tailwind:page": "tailwindcss -i ./src/assets/css/page.css -o ./dist/assets/css/page.css --minify",
+		"build:tailwind:single": "tailwindcss -i ./src/assets/css/single.css -o ./dist/assets/css/single.css --minify",
+		"build:tailwind": "pnpm build:tailwind:critical && pnpm build:tailwind:page && pnpm build:tailwind:single",
+
 		"build:js": "esbuild ./src/assets/js/main.js ./src/assets/js/home.js --bundle --minify --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js",
 		"build": "pnpm build:11ty && pnpm build:tailwind && pnpm build:js",
+
 		"format": "prettier . --write"
 	},
 	"devDependencies": {
