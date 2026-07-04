@@ -1,13 +1,22 @@
 @layer components {
-  .btn {
-    @apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition;
-  }
+	/* Base */
+	.btn {
+		@apply inline-flex items-center justify-center rounded-full border font-medium transition-colors;
+	}
 
-  .btn-primary {
-    @apply bg-slate-900 text-white hover:bg-slate-800;
-  }
+	/* Modifier */
+	.btn-md {
+		@apply px-4 py-2 text-sm;
+	}
+	.btn-xl {
+		@apply px-6 py-3 text-lg;
+	}
 
-  .btn-secondary {
-    @apply bg-slate-100 text-slate-900 hover:bg-slate-200;
-  }
+	/* Colors */
+	.btn-primary {
+		@apply bg-blaga-900 text-white border-blaga-900 hover:bg-blaga-800;
+	}
+	.btn-outline {
+		@apply bg-transparent text-blaga-900 border-blaga-300 hover:bg-blaga-50;
+	}
 }

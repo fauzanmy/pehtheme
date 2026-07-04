@@ -1,0 +1,11 @@
+@layer components {
+	.wp-block-quote {
+		@apply border-l-4 border-gray-300 pl-4 italic;
+	}
+	.wp-block-image {
+		@apply my-6;
+	}
+	.wp-block-columns {
+		@apply flex flex-col md:flex-row gap-6;
+	}
+}

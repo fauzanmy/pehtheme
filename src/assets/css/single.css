@@ -1,1 +1,10 @@
-/* Single article styles */
+@import 'tailwindcss';
+
+@import './components/post-header.css';
+@import './components/post-content.css';
+@import './components/post-content-media.css';
+@import './components/post-content-block.css';
+@import './components/post-footer.css';
+@import './components/comment-list.css';
+@import './components/comment-form.css';
+@import './components/related-posts.css';

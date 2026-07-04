@@ -1,13 +1,5 @@
 @layer components {
-  .site-header {
-    @apply border-b border-slate-200 bg-white;
-  }
-
-  .site-header__inner {
-    @apply flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between;
-  }
-
-  .site-brand {
-    @apply text-lg font-bold text-slate-900;
-  }
+	.site-header {
+		@apply w-full py-4 px-6 bg-white shadow-sm sticky top-0 z-50;
+	}
 }

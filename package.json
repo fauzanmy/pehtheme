@@ -8,16 +8,20 @@
 	"scripts": {
 		"dev:11ty": "eleventy --serve",
 		"dev:tailwind": "tailwindcss -i ./src/assets/css/app.css -o ./dist/assets/css/app.css --watch",
+		"watch:js": "esbuild ./src/assets/js/main.js ./src/assets/js/home.js --bundle --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js --watch",
 		"dev": "concurrently -n eleventy,tailwind -c yellow,cyan \"pnpm dev:11ty\" \"pnpm dev:tailwind\"",
+		"devjs": "concurrently -n eleventy,tailwind,js -c yellow,cyan,magenta \"pnpm dev:11ty\" \"pnpm dev:tailwind\" \"pnpm watch:js\"",
 		"build:11ty": "eleventy",
 		"build:tailwind": "tailwindcss -i ./src/assets/css/app.css -o ./dist/assets/css/app.css --minify",
-		"build": "pnpm build:11ty && pnpm build:tailwind",
+		"build:js": "esbuild ./src/assets/js/main.js ./src/assets/js/home.js --bundle --minify --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js",
+		"build": "pnpm build:11ty && pnpm build:tailwind && pnpm build:js",
 		"format": "prettier . --write"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.6",
 		"@tailwindcss/cli": "^4.3.2",
 		"concurrently": "^10.0.3",
+		"esbuild": "^0.28.1",
 		"prettier": "^3.9.4",
 		"prettier-plugin-tailwindcss": "^0.8.0",
 		"tailwindcss": "^4.3.2"

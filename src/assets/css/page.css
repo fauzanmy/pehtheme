@@ -1,1 +1,7 @@
-/* Generic page styles */
+@import 'tailwindcss';
+
+@import './components/page-header.css';
+@import './components/post-card.css';
+@import './components/pagination.css';
+@import './components/sidebar-widget.css';
+@import './components/empty-state.css';

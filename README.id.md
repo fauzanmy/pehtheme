@@ -102,23 +102,23 @@ src/assets/css/
 
 ### Peran masing-masing file CSS
 
-| File | Peran |
-|---|---|
-| `app.css` | Entry file utama Tailwind sekaligus agregator CSS |
-| `critical.css` | Helper layout global dan gaya struktural bersama |
-| `home.css` | Gaya khusus halaman home |
-| `page.css` | Gaya untuk halaman generik |
-| `single.css` | Gaya untuk template artikel/single |
-| `services.css` | Gaya untuk halaman services |
-| `contact.css` | Gaya untuk halaman contact |
+| File           | Peran                                             |
+| -------------- | ------------------------------------------------- |
+| `app.css`      | Entry file utama Tailwind sekaligus agregator CSS |
+| `critical.css` | Helper layout global dan gaya struktural bersama  |
+| `home.css`     | Gaya khusus halaman home                          |
+| `page.css`     | Gaya untuk halaman generik                        |
+| `single.css`   | Gaya untuk template artikel/single                |
+| `services.css` | Gaya untuk halaman services                       |
+| `contact.css`  | Gaya untuk halaman contact                        |
 
 Di dalam `core/`:
 
-| File | Peran |
-|---|---|
-| `base.css` | Styling elemen dasar |
-| `theme.css` | Token level tema dan aturan visual bersama |
-| `components/*.css` | Gaya komponen yang reusable |
+| File               | Peran                                      |
+| ------------------ | ------------------------------------------ |
+| `base.css`         | Styling elemen dasar                       |
+| `theme.css`        | Token level tema dan aturan visual bersama |
+| `components/*.css` | Gaya komponen yang reusable                |
 
 ---
 
@@ -253,13 +253,13 @@ Gunakan repositori sebagai sumber dan biarkan Cloudflare Pages melakukan build p
 
 - Framework preset: `None / Static site`
 - Build command:
-  ```bash
-  pnpm build
-  ```
+    ```bash
+    pnpm build
+    ```
 - Build output directory:
-  ```
-  dist
-  ```
+    ```
+    dist
+    ```
 
 **Catatan untuk Cloudflare Pages:**
 

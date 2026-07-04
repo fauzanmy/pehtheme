@@ -1,33 +1,7 @@
-@layer base {
-  body {
-    @apply bg-white text-slate-900 antialiased;
-  }
+@import 'tailwindcss';
 
-  main {
-    @apply min-h-[60vh];
-  }
-}
-
-@layer components {
-  .site-shell,
-  .site-header__inner,
-  .page-header__inner {
-    @apply mx-auto max-w-6xl px-6;
-  }
-
-  .site-section {
-    @apply py-16 md:py-20;
-  }
-
-  .site-section-sm {
-    @apply py-10 md:py-12;
-  }
-
-  .section-heading {
-    @apply text-3xl font-bold tracking-tight text-slate-900 md:text-4xl;
-  }
-
-  .section-lead {
-    @apply mt-4 max-w-3xl text-base leading-8 text-slate-600 md:text-lg;
-  }
-}
+@import './components/skip-link.css';
+@import './components/header.css';
+@import './components/branding.css';
+@import './components/nav.css';
+@import './components/footer.css';

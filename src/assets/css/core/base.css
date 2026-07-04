@@ -1,25 +1,13 @@
 @layer base {
-  * {
-    @apply border-slate-200;
-  }
+	/* Set */
 
-  html {
-    scroll-behavior: smooth;
-  }
+	a {
+		@apply hover:text-blawu dark:hover:text-blawu/90;
+	}
 
-  body {
-    @apply font-sans;
-  }
+	/* Menyembunyikan teks ALT image ketika gambar gagal loading */
 
-  a {
-    @apply transition-colors duration-200;
-  }
-
-  img {
-    @apply block max-w-full;
-  }
-
-  strong {
-    @apply font-semibold text-slate-900;
-  }
+	img[loading='lazy'] {
+		@apply text-transparent;
+	}
 }

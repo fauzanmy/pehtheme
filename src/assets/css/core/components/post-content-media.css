@@ -1,0 +1,26 @@
+@layer components {
+	.alignleft {
+		@apply float-left mr-6 mb-2;
+	}
+	.alignright {
+		@apply float-right ml-6 mb-2;
+	}
+	.aligncenter {
+		@apply block mx-auto;
+	}
+	.alignwide {
+		@apply w-full md:w-[125%] md:-mx-[12.5%];
+	}
+	.alignfull {
+		@apply w-screen relative left-1/2 -translate-x-1/2;
+	}
+	.wp-caption {
+		@apply max-w-full;
+	}
+	.wp-caption-text {
+		@apply text-sm text-gray-500 text-center mt-2;
+	}
+	.gallery {
+		@apply grid grid-cols-2 md:grid-cols-3 gap-3;
+	}
+}

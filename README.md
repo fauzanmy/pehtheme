@@ -1,37 +1,63 @@
 # Pehtheme
 
-Pehtheme is a static HTML template project built with **Eleventy (11ty)**, **Nunjucks**, and **Tailwind CSS**.
+Pehtheme is a static HTML landing page template starter powered by **Eleventy (11ty)**, **Nunjucks**, **Tailwind CSS v4**, and **esbuild**.
 
-This repository is designed as a **ready-to-use HTML template source + distributable output**:
-
-- `src/` contains the development source files
-- `dist/` contains the final generated HTML and compiled CSS ready to copy, preview, or deploy
-
-Pehtheme is not only a starter HTML template repository — it can be used directly to build a **landing page**, a **company profile site**, or a **small static marketing website**, then deployed to static hosting platforms such as **Cloudflare Pages**.
+This repository is designed for building **static landing pages, company profile sites, and marketing pages** with a clean templating workflow and a simple asset pipeline.  
+The output is generated into `dist/` and can be used directly for deployment or copied as a standalone HTML template package.
 
 ---
 
-## Project goals
+## Stack
 
-Pehtheme is focused on building a clean static website template with reusable partials and modular CSS architecture.
-
-Current template targets:
-
-- Home
-- About
-- Services
-- Page
-- Contact
-- Single article template
+- **Eleventy (11ty)** — static site generator
+- **Nunjucks** — layout, partials, reusable template components
+- **Tailwind CSS v4** — utility-first styling
+- **esbuild** — JavaScript bundling for modular browser scripts
+- **PNPM** — package manager
 
 ---
 
-## Tech stack
+## What this project is for
 
-- [Eleventy (11ty)](https://www.11ty.dev/) — static site generator
-- [Nunjucks](https://mozilla.github.io/nunjucks/) — templating
-- [Tailwind CSS](https://tailwindcss.com/) — utility-first CSS
-- [PNPM](https://pnpm.io/) — package manager
+Pehtheme is intended for:
+
+- landing pages
+- agency / business websites
+- company profile websites
+- static marketing pages
+- HTML template distribution
+- deployment to static hosting such as **Cloudflare Pages**
+
+This repository is **not** a full CMS or application framework.  
+It focuses on **templated static HTML output** with a comfortable developer workflow.
+
+---
+
+## Output structure
+
+Build output is generated into `dist/`.
+
+Example structure:
+
+```text
+dist/
+├─ index.html
+├─ about/
+│  └─ index.html
+├─ contact/
+│  └─ index.html
+├─ page/
+│  └─ index.html
+├─ services/
+│  └─ index.html
+└─ assets/
+   ├─ css/
+   │  └─ app.css
+   └─ js/
+      ├─ main.js
+      ├─ home.js
+      └─ chunks/
+```
 
 ---
 
@@ -39,44 +65,182 @@ Current template targets:
 
 ```text
 .
-├── archive/
-│   └── pre-11ty-template/
-├── dist/
-│   ├── index.html
-│   ├── about/
-│   ├── contact/
-│   ├── page/
-│   ├── services/
-│   ├── single/
-│   └── assets/
-│       ├── css/
-│       └── images/
-├── src/
-│   ├── _data/
-│   │   └── site.json
-│   ├── _includes/
-│   │   ├── layouts/
-│   │   ├── partials/
-│   │   └── sections/
-│   ├── assets/
-│   │   ├── css/
-│   │   └── images/
-│   ├── about.njk
-│   ├── contact.njk
-│   ├── index.njk
-│   ├── page.njk
-│   ├── services.njk
-│   └── single.njk
-├── .eleventy.js
-├── package.json
-└── README.md
+├─ archive/
+│  └─ pre-vite-template/
+├─ dist/
+├─ src/
+│  ├─ _includes/
+│  │  ├─ layouts/
+│  │  └─ partials/
+│  ├─ assets/
+│  │  ├─ css/
+│  │  ├─ images/
+│  │  └─ js/
+│  ├─ data/
+│  ├─ about.njk
+│  ├─ contact.njk
+│  ├─ index.njk
+│  ├─ page.njk
+│  ├─ services.njk
+│  └─ single.njk
+├─ .eleventy.js
+├─ package.json
+└─ README.md
 ```
 
 ---
 
-## CSS architecture
+# Getting started
 
-Pehtheme uses a modular CSS structure on top of Tailwind CSS.
+## 1) Clone repository
+
+```bash
+git clone https://github.com/fauzanmy/pehtheme.git
+cd pehtheme
+```
+
+## 2) Install dependencies
+
+```bash
+pnpm install
+```
+
+## 3) Run development server
+
+```bash
+pnpm dev
+```
+
+This starts:
+
+- Eleventy dev server
+- Tailwind CSS watch process
+
+By default, the site is served locally by Eleventy.
+
+---
+
+# Available scripts
+
+## `pnpm dev`
+
+Run Eleventy dev server and Tailwind CSS watch.
+
+Use this when you are working on:
+
+- `.njk` templates
+- layouts and partials
+- Tailwind styling
+
+```bash
+pnpm dev
+```
+
+---
+
+## `pnpm watch:js`
+
+Watch and rebuild JavaScript bundles only.
+
+Use this when you are working on:
+
+- `src/assets/js/main.js`
+- `src/assets/js/home.js`
+- component scripts
+- feature scripts
+
+```bash
+pnpm watch:js
+```
+
+---
+
+## `pnpm dev:assets`
+
+Run **Tailwind watch + JavaScript watch** together.
+
+Use this when you are focusing on frontend assets only.
+
+```bash
+pnpm dev:assets
+```
+
+This runs:
+
+- Tailwind CSS watch
+- esbuild JavaScript watch
+
+---
+
+## `pnpm build`
+
+Generate a production build into `dist/`.
+
+This runs:
+
+- Eleventy build
+- Tailwind CSS minified build
+- JavaScript bundle build
+
+```bash
+pnpm build
+```
+
+---
+
+## `pnpm format`
+
+Format project files using Prettier.
+
+```bash
+pnpm format
+```
+
+---
+
+# Templating system
+
+Pehtheme uses **Nunjucks** for layouts and reusable partials.
+
+This gives a workflow similar to template composition patterns such as:
+
+- header include
+- footer include
+- page section partials
+- shared base layout
+
+## Example layout usage
+
+A page template can use a base layout and define front matter:
+
+```njk
+---
+layout: layouts/base.njk
+title: About
+permalink: /about/index.html
+---
+```
+
+## Example page structure
+
+- `src/index.njk` → homepage
+- `src/about.njk` → about page
+- `src/contact.njk` → contact page
+- `src/page.njk` → generic page
+- `src/services.njk` → services page
+- `src/single.njk` → article / single content page
+
+---
+
+# CSS architecture
+
+The CSS source lives in:
+
+```text
+src/assets/css/
+```
+
+Current structure:
 
 ```text
 src/assets/css/
@@ -100,232 +264,281 @@ src/assets/css/
         └── pagination.css
 ```
 
-### CSS file roles
+## Recommended usage
 
-| File | Role |
-|---|---|
-| `app.css` | Main Tailwind entry file and CSS aggregator |
-| `critical.css` | Global layout helpers and shared structural styles |
-| `home.css` | Homepage-specific styles |
-| `page.css` | Generic page styles |
-| `single.css` | Article/single template styles |
-| `services.css` | Services page styles |
-| `contact.css` | Contact page styles |
-
-Inside `core/`:
-
-| File | Role |
-|---|---|
-| `base.css` | Base element styling |
-| `theme.css` | Theme-level tokens and shared visual rules |
-| `components/*.css` | Reusable component styles |
+- `app.css` → global stylesheet entry
+- `critical.css` → critical/global foundation if needed
+- `home.css` → homepage-specific styling
+- `page.css` → generic page styling
+- `single.css` → article/single page styling
+- `services.css` → services page styling
+- `contact.css` → contact page styling
+- `core/base.css` → base Tailwind + shared resets/utilities
+- `core/theme.css` → theme-level shared styles
+- `core/components/*` → reusable component styles
 
 ---
 
-## How to use
+# JavaScript architecture
 
-### 1) Clone the repository
+JavaScript source lives in:
 
-```bash
-git clone https://github.com/fauzanmy/pehtheme.git
-cd pehtheme
+```text
+src/assets/js/
 ```
 
-### 2) Install dependencies
+Current structure:
 
-```bash
-pnpm install
+```text
+src/assets/js/
+├── components
+│   ├── carousel.js
+│   ├── gallery-lightbox.js
+│   ├── marquee.js
+│   ├── modal.js
+│   └── toggle.js
+├── features
+│   ├── dark-mode.js
+│   ├── relative-date.js
+│   └── shadow-effect.js
+├── utils
+│   └── dom-ready.js
+├── home.js
+└── main.js
 ```
 
-### 3) Start development mode
+## Entry files
+
+### `main.js`
+
+Global entry for scripts that are needed on all pages.
+
+Typical examples:
+
+- dark mode
+- header interactions
+- mobile toggle
+- shared UI behaviors
+
+### `home.js`
+
+Homepage-specific entry.
+
+Typical examples:
+
+- hero carousel
+- marquee
+- homepage interactions
+
+---
+
+## Async import pattern
+
+Pehtheme uses a lightweight async import approach in entry files.
+
+Example `main.js`:
+
+```js
+import { domReady } from './utils/dom-ready.js';
+
+domReady(async () => {
+	await import('./features/dark-mode.js');
+	await import('./features/shadow-effect.js');
+	await import('./components/toggle.js');
+});
+```
+
+Example `home.js`:
+
+```js
+import { domReady } from './utils/dom-ready.js';
+
+domReady(async () => {
+	await import('./components/carousel.js');
+	await import('./components/marquee.js');
+});
+```
+
+Because of this async import pattern, esbuild may generate additional chunk files inside:
+
+```text
+dist/assets/js/chunks/
+```
+
+That is expected.
+
+---
+
+# Working with pages
+
+## Add a new page
+
+To add a new page, create a new `.njk` file inside `src/`.
+
+Example:
+
+```text
+src/card.njk
+```
+
+Example front matter:
+
+```njk
+---
+layout: layouts/base.njk
+title: Card Demo
+permalink: /card/index.html
+---
+```
+
+Then build or run dev mode, and Eleventy will generate:
+
+```text
+dist/card/index.html
+```
+
+---
+
+# How to edit the template
+
+## Edit content / markup
+
+Work in:
+
+- `src/*.njk`
+- `src/_includes/layouts/`
+- `src/_includes/partials/`
+
+## Edit styles
+
+Work in:
+
+- `src/assets/css/`
+
+## Edit JavaScript
+
+Work in:
+
+- `src/assets/js/`
+
+---
+
+# Distribution workflow
+
+This project can be used in two ways.
+
+## 1) Use as a development starter
+
+Clone the repository, edit templates, styles, and scripts, then build your site.
+
+## 2) Use as a ready-to-copy HTML template
+
+After running:
+
+```bash
+pnpm build
+```
+
+you can take the generated files from `dist/` and:
+
+- upload them to a static host
+- deploy them to Cloudflare Pages
+- distribute them as a plain HTML template package
+- reuse them in another project
+
+---
+
+# Deploying to Cloudflare Pages
+
+Pehtheme can be deployed directly to **Cloudflare Pages**.
+
+## Recommended settings
+
+### Build command
+
+```bash
+pnpm build
+```
+
+### Build output directory
+
+```text
+dist
+```
+
+If your repository is connected to Cloudflare Pages, those settings are usually enough.
+
+---
+
+# Suggested development workflow
+
+## When working on templates and styling
+
+Run:
 
 ```bash
 pnpm dev
 ```
 
-This will start:
+Use this for:
 
-- Eleventy development server
-- Tailwind CSS watch build
+- editing `.njk`
+- editing Tailwind / CSS
+- working on layouts and partials
 
-Default local development URL:
+---
 
+## When working on JavaScript only
+
+Run:
+
+```bash
+pnpm watch:js
 ```
-http://localhost:8081
+
+Use this for:
+
+- component behavior
+- dark mode / toggle / carousel logic
+- script experiments
+
+---
+
+## When working on frontend assets together
+
+Run:
+
+```bash
+pnpm dev:assets
 ```
 
-### 4) Edit the template source
+Use this for:
 
-The main development source is inside:
+- CSS + JS work together
+- interaction + styling adjustments
 
-- `src/` → pages, layouts, partials, sections, global data
-- `src/assets/css/` → Tailwind-based modular CSS source
-- `src/assets/images/` → template images/assets
+---
 
-Typical files to edit:
+## Before deployment or distribution
 
-- `src/index.njk` → homepage template
-- `src/about.njk` → about page
-- `src/services.njk` → services page
-- `src/contact.njk` → contact page
-- `src/page.njk` → generic page template
-- `src/single.njk` → single article template
-- `src/_data/site.json` → site metadata and reusable global values
-
-### 5) Build the final static output
+Run:
 
 ```bash
 pnpm build
 ```
 
-The final generated files will be written to:
-
-```
-dist/
-```
+Then use the contents of `dist/`.
 
 ---
 
-## Distribution and usage
+# Notes
 
-Pehtheme can be used in two ways.
-
-### Option A — Use as a development source project
-
-This is the recommended mode if you want to customize the landing page or build a full static site.
-
-Workflow:
-
-1. clone the repository
-2. edit files in `src/`
-3. run `pnpm dev` during development
-4. run `pnpm build`
-5. use the generated output from `dist/`
-
-### Option B — Use only the ready-to-use HTML output
-
-If you do not want to work with 11ty/Nunjucks/Tailwind source files, you can simply use the generated files inside:
-
-```
-dist/
-```
-
-You can copy the `dist/` contents to:
-
-- shared hosting
-- a static web server
-- a CDN/static bucket
-- Cloudflare Pages deployment source
-- any environment that serves static HTML/CSS/assets
+- `dist/` is part of the project output and may be committed if you want to distribute ready-built HTML template files directly from the repository.
+- `archive/` stores older template iterations or abandoned stack attempts.
+- This project intentionally keeps the stack small and focused on static HTML templating.
 
 ---
 
-## Build output
+# License
 
-The `dist/` directory contains the final generated website output, including:
-
-- generated HTML pages
-- compiled CSS
-- copied static assets
-
-Current generated pages:
-
-- `/`
-- `/about/`
-- `/services/`
-- `/page/`
-- `/contact/`
-- `/single/`
-
-Because this repository is intended to work both as source code and ready-to-use template output, the `dist/` directory is intentionally committed to the repository.
-
----
-
-## Deploy to Cloudflare Pages
-
-Pehtheme can be deployed directly to Cloudflare Pages as a static site.
-
-### Recommended deployment approach
-
-Use the repository as the source and let Cloudflare Pages build the project automatically.
-
-**Cloudflare Pages settings:**
-
-- Framework preset: `None / Static site`
-- Build command:
-  ```bash
-  pnpm build
-  ```
-- Build output directory:
-  ```
-  dist
-  ```
-
-**Notes for Cloudflare Pages:**
-
-- make sure the project uses Node.js with PNPM support in the Cloudflare Pages build environment
-- the final published files come from the `dist/` directory
-- because Pehtheme is a static site, it does not require a server runtime
-
-### Alternative deployment approach
-
-If you prefer not to let Cloudflare build the project, you can also:
-
-1. run `pnpm build` locally
-2. upload the generated `dist/` folder as the deployment artifact
-
-This makes Pehtheme suitable for:
-
-- landing pages
-- agency/company profile sites
-- product microsites
-- documentation-like static sites
-- simple marketing websites
-
----
-
-## Important repository convention
-
-This repository keeps both source files and final build output.
-
-**Source of truth:**
-
-- `src/` → development source
-- `.eleventy.js` → Eleventy configuration
-- `package.json` → scripts and dependencies
-
-**Final distributable output:**
-
-- `dist/` → compiled HTML + CSS ready to use
-
-Because this repository is intended to be used as an HTML template package, the `dist/` directory is committed to the repository and should be kept in sync with the source.
-
-### Recommended workflow before committing
-
-After making template or CSS changes:
-
-```bash
-pnpm build
-git add .
-git commit -m "your message"
-```
-
----
-
-## Archive
-
-The `archive/` directory stores the legacy template version from before the Eleventy migration:
-
-```
-archive/
-└── pre-11ty-template/
-```
-
----
-
-## Notes
-
-- the current active stack is 11ty + Nunjucks + Tailwind CSS
-- `dist/` is intentionally committed because it serves as the ready-to-use template output
-- `archive/pre-11ty-template/` stores the legacy pre-11ty template
-- Pehtheme can be used directly as a static landing page project and deployed to platforms like Cloudflare Pages
+See the `LICENSE` file in this repository.

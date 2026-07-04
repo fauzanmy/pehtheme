@@ -7,10 +7,10 @@ export default function (eleventyConfig) {
 			input: 'src',
 			includes: '_includes',
 			data: '_data',
-			output: 'dist'
+			output: 'dist',
 		},
-			htmlTemplateEngine: 'njk',
-			markdownTemplateEngine: 'njk',
-			templateFormats: ['njk', 'html']
+		htmlTemplateEngine: 'njk',
+		markdownTemplateEngine: 'njk',
+		templateFormats: ['njk', 'html'],
 	};
 }

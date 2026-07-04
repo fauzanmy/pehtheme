@@ -1,0 +1,107 @@
+/**
+ * Utility Classes
+ *
+ * Reusable helper classes shared across the theme.
+ *
+ * Includes:
+ * - Base element helpers
+ * - Visibility helpers
+ * - Layout helpers
+ * - Loading
+ * - Scrollbar helpers
+ * - WordPress helper classes
+ *
+ * @package UIAceh
+ * @since 1.5.2
+ */
+
+@layer utilities {
+	/* --------------------------------------------------------------------------
+	 * Base
+	 * ----------------------------------------------------------------------- */
+
+	html {
+		@apply scroll-smooth;
+	}
+
+	a {
+		@apply hover:text-blawu dark:hover:text-blawu/90;
+	}
+
+	img[loading='lazy'] {
+		@apply text-transparent;
+	}
+
+	hr {
+		@apply border-t border-blaga-500/30;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * Visibility
+	 * ----------------------------------------------------------------------- */
+
+	.show,
+	.open {
+		@apply block;
+	}
+
+	.close {
+		@apply hidden;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * Layout Helpers
+	 * ----------------------------------------------------------------------- */
+
+	.scroll-horizontal {
+		@apply flex items-center flex-nowrap whitespace-nowrap overflow-x-auto;
+	}
+
+	.overlay,
+	.lightbox {
+		@apply absolute inset-0 bg-black/50;
+	}
+
+	.stretched-link::before {
+		@apply absolute inset-0 content-[''] pointer-events-auto;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * Loading
+	 * ----------------------------------------------------------------------- */
+
+	.skeleton {
+		@apply flex items-center justify-center w-full h-full rounded-lg text-blaga-300/25;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * Scrollbar
+	 * ----------------------------------------------------------------------- */
+
+	.scrollbar-thin {
+		scrollbar-width: thin;
+	}
+
+	.scrollbar-thin::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * WordPress
+	 * ----------------------------------------------------------------------- */
+
+	.skip-link,
+	.screen-reader-text {
+		@apply hidden;
+	}
+}

@@ -1,0 +1,8 @@
+@layer components {
+	.comment-form {
+		@apply flex flex-col gap-4 mt-8;
+	}
+	.comment-reply-title {
+		@apply text-lg font-semibold text-gray-900;
+	}
+}
