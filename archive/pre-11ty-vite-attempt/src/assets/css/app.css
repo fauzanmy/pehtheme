@@ -1,9 +1,0 @@
-@import "tailwindcss";
-
-
-@import "tailwindcss";
-
-@source "../../pages/**/*.njk";
-@source "../../partials/**/*.njk";
-@source "../../layouts/**/*.njk";
-@source "../../data/**/*.json";

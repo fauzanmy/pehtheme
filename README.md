@@ -1,37 +1,64 @@
-# Pehtheme v2.0.0
-Pehtheme mobile-first HTML template for blog, news build with TailwindCSS.
+# Pehtheme
 
-### Features
+Pehtheme is a static HTML template project built with **Eleventy (11ty)**, **Nunjucks**, and **Tailwind CSS**.
 
-- Lighter and faster
-- Web/author stories (under development)
-- Nav menu horizontal scroll (desktop & mobile view) 
-- Material sidenav responsive width (mobile view) 
-- Horizontal mouse wheel scrolling (desktop) 
-- Support and use SVG [Bootstrap Icons](https://icons.getbootstrap.com/).
-- Responsive footer view
-- Pure JavaScript
-- No jQuery dependency
+This repository is designed as a **ready-to-use HTML template source + distributable output**:
 
-### Documentation
+- `src/` contains the development source files
+- `dist/` contains the final generated HTML and compiled CSS ready to copy, preview, or deploy
 
-- [Indonesian](https://insertapps.com/pehtheme/)
-- English
+## Project goals
 
-### Demo
+Pehtheme is focused on building a clean static website template with reusable partials and modular CSS architecture.
 
-- Homepage: https://fauzanmy.github.io/pehtheme/
-- Single page : https://fauzanmy.github.io/pehtheme/single.html
+Current template targets:
 
-### Browser Support
+- Home
+- About
+- Services
+- Page
+- Contact
+- Single article template
 
-- Google Chrome
-- Firefox
-- Safari
-- etc
+## Tech stack
 
-### FAQ
+- [Eleventy (11ty)](https://www.11ty.dev/) — static site generator
+- [Nunjucks](https://mozilla.github.io/nunjucks/) — templating
+- [Tailwind CSS](https://tailwindcss.com/) — utility-first CSS
+- [PNPM](https://pnpm.io/) — package manager
 
-### Resource
+## Project structure
 
-All images from [Freebiespic.com](https://freebiespic.com/)
+```text
+.
+├── archive/
+│   └── pre-11ty-template/
+├── dist/
+│   ├── index.html
+│   ├── about/
+│   ├── contact/
+│   ├── page/
+│   ├── services/
+│   ├── single/
+│   └── assets/
+│       ├── css/
+│       └── images/
+├── src/
+│   ├── _data/
+│   │   └── site.json
+│   ├── _includes/
+│   │   ├── layouts/
+│   │   ├── partials/
+│   │   └── sections/
+│   ├── assets/
+│   │   ├── css/
+│   │   └── images/
+│   ├── about.njk
+│   ├── contact.njk
+│   ├── index.njk
+│   ├── page.njk
+│   ├── services.njk
+│   └── single.njk
+├── .eleventy.js
+├── package.json
+└── README.md
