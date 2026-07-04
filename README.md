@@ -1,94 +1,114 @@
 # Pehtheme
 
-Pehtheme is a static HTML landing page template starter powered by **Eleventy (11ty)**, **Nunjucks**, **Tailwind CSS v4**, and **esbuild**.
+Pehtheme is a static HTML template starter powered by **Eleventy (11ty)**, **Nunjucks**, **Tailwind CSS v4**, and **esbuild**.
 
-This repository is designed for building **static landing pages, company profile sites, and marketing pages** with a clean templating workflow and a simple asset pipeline.  
-The output is generated into `dist/` and can be used directly for deployment or copied as a standalone HTML template package.
+It is designed for building **landing pages, company profile sites, marketing websites, and article/single page templates** with a clean component-based structure and a simple frontend workflow.
 
----
+The final build is generated into `dist/`, so the project can be used in two ways:
 
-## Stack
+1. as a **development starter** for static websites, or  
+2. as a **ready-to-distribute HTML template package**.
 
-- **Eleventy (11ty)** — static site generator
-- **Nunjucks** — layout, partials, reusable template components
-- **Tailwind CSS v4** — utility-first styling
-- **esbuild** — JavaScript bundling for modular browser scripts
-- **PNPM** — package manager
+## Features
 
----
+- **Eleventy (11ty)** for static HTML generation
+- **Nunjucks templating** for layouts, partials, and reusable sections
+- **Tailwind CSS v4** for utility-first styling
+- **Three-layer CSS output**
+  - `critical.css`
+  - `page.css`
+  - `single.css`
+- **esbuild** for modular JavaScript bundling
+- **Single article template** included
+- **Static asset passthrough** for images and icons
+- Output ready for:
+  - direct HTML distribution
+  - static hosting
+  - Cloudflare Pages deployment
 
-## What this project is for
+# Stack
+
+- **Eleventy 3**
+- **Nunjucks**
+- **Tailwind CSS v4**
+- **esbuild**
+- **PNPM**
+
+# What this project is for
 
 Pehtheme is intended for:
 
 - landing pages
-- agency / business websites
 - company profile websites
-- static marketing pages
+- agency / business websites
+- static marketing websites
+- article / blog post mockup pages
 - HTML template distribution
-- deployment to static hosting such as **Cloudflare Pages**
+- deployment to static hosting platforms such as **Cloudflare Pages**
 
-This repository is **not** a full CMS or application framework.  
-It focuses on **templated static HTML output** with a comfortable developer workflow.
+This project is intentionally focused on **static HTML templating**, not on building a full CMS or JavaScript application.
 
----
-
-## Output structure
+# Output structure
 
 Build output is generated into `dist/`.
 
-Example structure:
+Example final structure:
 
 ```text
 dist/
-├─ index.html
-├─ about/
-│  └─ index.html
-├─ contact/
-│  └─ index.html
-├─ page/
-│  └─ index.html
-├─ services/
-│  └─ index.html
-└─ assets/
-   ├─ css/
-   │  └─ app.css
-   └─ js/
-      ├─ main.js
-      ├─ home.js
-      └─ chunks/
+├── about/
+│   └── index.html
+├── assets/
+│   ├── css/
+│   │   ├── critical.css
+│   │   ├── page.css
+│   │   └── single.css
+│   ├── icons/
+│   └── images/
+├── contact/
+│   └── index.html
+├── index.html
+├── page/
+│   └── index.html
+├── services/
+│   └── index.html
+└── single/
+    └── index.html
 ```
 
----
-
-## Project structure
+# Project structure
 
 ```text
 .
-├─ archive/
-│  └─ pre-vite-template/
-├─ dist/
-├─ src/
-│  ├─ _includes/
-│  │  ├─ layouts/
-│  │  └─ partials/
-│  ├─ assets/
-│  │  ├─ css/
-│  │  ├─ images/
-│  │  └─ js/
-│  ├─ data/
-│  ├─ about.njk
-│  ├─ contact.njk
-│  ├─ index.njk
-│  ├─ page.njk
-│  ├─ services.njk
-│  └─ single.njk
-├─ .eleventy.js
-├─ package.json
-└─ README.md
+├── archive/
+│   └── pre-11ty-template/
+├── dist/
+├── src/
+│   ├── _data/
+│   │   └── site.json
+│   ├── _includes/
+│   │   ├── layouts/
+│   │   │   └── base.njk
+│   │   ├── partials/
+│   │   │   ├── footer.njk
+│   │   │   └── header.njk
+│   │   └── sections/
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── icons/
+│   │   ├── images/
+│   │   └── js/
+│   ├── about.njk
+│   ├── contact.njk
+│   ├── index.njk
+│   ├── page.njk
+│   ├── services.njk
+│   └── single.njk
+├── package.json
+├── pnpm-lock.yaml
+├── README.md
+└── README.id.md
 ```
-
----
 
 # Getting started
 
@@ -105,179 +125,260 @@ cd pehtheme
 pnpm install
 ```
 
-## 3) Run development server
+## 3) Run development mode
 
+### Template + Tailwind only
 ```bash
 pnpm dev
 ```
 
-This starts:
-
-- Eleventy dev server
-- Tailwind CSS watch process
-
-By default, the site is served locally by Eleventy.
-
----
+### Template + Tailwind + JavaScript watch
+```bash
+pnpm devjs
+```
 
 # Available scripts
 
 ## `pnpm dev`
 
-Run Eleventy dev server and Tailwind CSS watch.
+Run **Eleventy dev server** and **Tailwind CSS watch**.
 
 Use this when you are working on:
 
 - `.njk` templates
 - layouts and partials
-- Tailwind styling
+- page structure
+- Tailwind utility classes
+- CSS styling
 
 ```bash
 pnpm dev
 ```
 
----
+## `pnpm devjs`
 
-## `pnpm watch:js`
+Run:
 
-Watch and rebuild JavaScript bundles only.
+- Eleventy dev server
+- Tailwind CSS watch
+- JavaScript watch via esbuild
 
 Use this when you are working on:
 
-- `src/assets/js/main.js`
-- `src/assets/js/home.js`
-- component scripts
-- feature scripts
+- templates and styles
+- JavaScript interactions
+- component behavior
+- dark mode, toggle, carousel, marquee, etc.
 
 ```bash
-pnpm watch:js
+pnpm devjs
 ```
-
----
-
-## `pnpm dev:assets`
-
-Run **Tailwind watch + JavaScript watch** together.
-
-Use this when you are focusing on frontend assets only.
-
-```bash
-pnpm dev:assets
-```
-
-This runs:
-
-- Tailwind CSS watch
-- esbuild JavaScript watch
-
----
 
 ## `pnpm build`
 
-Generate a production build into `dist/`.
+Generate the final production build into `dist/`.
 
 This runs:
 
 - Eleventy build
-- Tailwind CSS minified build
-- JavaScript bundle build
+- Tailwind CSS production build
+- JavaScript production build
 
 ```bash
 pnpm build
 ```
 
----
-
 ## `pnpm format`
 
-Format project files using Prettier.
+Format project files with Prettier.
 
 ```bash
 pnpm format
 ```
 
----
+# Pages included
+
+Pehtheme currently includes these page templates:
+
+- `/` → homepage
+- `/about/`
+- `/contact/`
+- `/page/`
+- `/services/`
+- `/single/` → single article / post page template
+
 
 # Templating system
 
-Pehtheme uses **Nunjucks** for layouts and reusable partials.
+Pehtheme uses **Nunjucks** with Eleventy for reusable HTML templating.
 
-This gives a workflow similar to template composition patterns such as:
+This gives a workflow similar to:
 
-- header include
-- footer include
-- page section partials
 - shared base layout
+- reusable header/footer partials
+- page-level templates
+- optional section partials
 
-## Example layout usage
+## Main layout
 
-A page template can use a base layout and define front matter:
-
-```njk
----
-layout: layouts/base.njk
-title: About
-permalink: /about/index.html
----
+```text
+src/_includes/layouts/base.njk
 ```
 
-## Example page structure
+## Partials
 
-- `src/index.njk` → homepage
-- `src/about.njk` → about page
-- `src/contact.njk` → contact page
-- `src/page.njk` → generic page
-- `src/services.njk` → services page
-- `src/single.njk` → article / single content page
+```text
+src/_includes/partials/
+├── header.njk
+└── footer.njk
+```
 
----
+## Page templates
+
+```text
+src/
+├── index.njk
+├── about.njk
+├── contact.njk
+├── page.njk
+├── services.njk
+└── single.njk
+```
+
+# Data
+
+Site-level shared data lives in:
+
+```text
+src/_data/site.json
+```
+
+Use this file for project-wide values such as:
+
+- site title
+- tagline
+- description
+- footer text
+- navigation labels
+- social links
+- contact information
+
 
 # CSS architecture
 
-The CSS source lives in:
+Source CSS lives in:
 
 ```text
 src/assets/css/
 ```
 
-Current structure:
+Final build output:
+
+```text
+dist/assets/css/
+├── critical.css
+├── page.css
+└── single.css
+```
+
+
+## CSS output strategy
+
+Pehtheme uses a **three-file CSS strategy**:
+
+### `critical.css`
+Global foundation loaded on **all pages**.
+
+Used for:
+- Tailwind import/foundation
+- base styles
+- theme styles
+- layout shell
+- header
+- navigation
+- footer
+- reusable global components/utilities
+
+### `page.css`
+Loaded on general pages such as:
+
+- homepage
+- about
+- services
+- contact
+- generic page templates
+
+### `single.css`
+Loaded on the single article template.
+
+Used for:
+- post layout
+- article header/meta
+- post content typography
+- related posts / sidebar / comment blocks if needed
+
+## CSS source structure
+
+Current source structure:
 
 ```text
 src/assets/css/
-├── app.css
 ├── critical.css
-├── home.css
 ├── page.css
 ├── single.css
-├── services.css
-├── contact.css
-└── core
+└── core/
     ├── base.css
+    ├── layout.css
     ├── theme.css
-    └── components
+    ├── utilities.css
+    └── components/
+        ├── branding.css
         ├── button.css
         ├── card.css
+        ├── comment-form.css
+        ├── comment-list.css
+        ├── empty-state.css
+        ├── footer.css
         ├── header.css
+        ├── nav.css
         ├── navigation.css
         ├── navigation-mobile.css
         ├── page-header.css
-        └── pagination.css
+        ├── pagination.css
+        ├── post-card.css
+        ├── post-content.css
+        ├── post-content-block.css
+        ├── post-content-media.css
+        ├── post-footer.css
+        ├── post-header.css
+        ├── related-posts.css
+        ├── sidebar-widget.css
+        └── skip-link.css
 ```
 
-## Recommended usage
+# How CSS is loaded
 
-- `app.css` → global stylesheet entry
-- `critical.css` → critical/global foundation if needed
-- `home.css` → homepage-specific styling
-- `page.css` → generic page styling
-- `single.css` → article/single page styling
-- `services.css` → services page styling
-- `contact.css` → contact page styling
-- `core/base.css` → base Tailwind + shared resets/utilities
-- `core/theme.css` → theme-level shared styles
-- `core/components/*` → reusable component styles
+## General pages
+Pages such as `index`, `about`, `contact`, `page`, and `services` load:
 
----
+```html
+<link rel="stylesheet" href="/assets/css/critical.css">
+<link rel="stylesheet" href="/assets/css/page.css">
+```
+
+## Single article page
+`single.njk` loads:
+
+```html
+<link rel="stylesheet" href="/assets/css/critical.css">
+<link rel="stylesheet" href="/assets/css/single.css">
+```
+
+This allows the project to keep:
+
+- a shared global stylesheet
+- a separate general-page stylesheet
+- a dedicated single-post stylesheet
 
 # JavaScript architecture
 
@@ -291,52 +392,46 @@ Current structure:
 
 ```text
 src/assets/js/
-├── components
+├── components/
 │   ├── carousel.js
 │   ├── gallery-lightbox.js
 │   ├── marquee.js
 │   ├── modal.js
 │   └── toggle.js
-├── features
+├── features/
 │   ├── dark-mode.js
 │   ├── relative-date.js
 │   └── shadow-effect.js
-├── utils
+├── utils/
 │   └── dom-ready.js
 ├── home.js
 └── main.js
 ```
 
-## Entry files
+## JavaScript entry files
 
 ### `main.js`
+Global JavaScript entry for all pages.
 
-Global entry for scripts that are needed on all pages.
-
-Typical examples:
-
+Typical usage:
 - dark mode
-- header interactions
 - mobile toggle
-- shared UI behaviors
+- header interactions
+- global UI behavior
 
 ### `home.js`
+Homepage-specific JavaScript entry.
 
-Homepage-specific entry.
-
-Typical examples:
-
-- hero carousel
+Typical usage:
+- carousel
 - marquee
-- homepage interactions
-
----
+- homepage-only interactions
 
 ## Async import pattern
 
-Pehtheme uses a lightweight async import approach in entry files.
+Pehtheme uses a lightweight async import pattern in entry files.
 
-Example `main.js`:
+Example:
 
 ```js
 import { domReady } from './utils/dom-ready.js';
@@ -348,37 +443,37 @@ domReady(async () => {
 });
 ```
 
-Example `home.js`:
+Because of this, esbuild may generate chunk files for async-loaded modules during bundling.
 
-```js
-import { domReady } from './utils/dom-ready.js';
+# Static assets
 
-domReady(async () => {
-	await import('./components/carousel.js');
-	await import('./components/marquee.js');
-});
-```
-
-Because of this async import pattern, esbuild may generate additional chunk files inside:
+Pehtheme includes these asset types inside `src/assets/`:
 
 ```text
-dist/assets/js/chunks/
+src/assets/
+├── css/
+├── icons/
+├── images/
+└── js/
 ```
 
-That is expected.
+## Build behavior
 
----
+- `css/` → compiled into `dist/assets/css/`
+- `js/` → bundled into final JS output
+- `images/` → copied to `dist/assets/images/`
+- `icons/` → copied to `dist/assets/icons/`
 
 # Working with pages
 
 ## Add a new page
 
-To add a new page, create a new `.njk` file inside `src/`.
+Create a new `.njk` file inside `src/`.
 
 Example:
 
 ```text
-src/card.njk
+src/portofolio.njk
 ```
 
 Example front matter:
@@ -386,67 +481,69 @@ Example front matter:
 ```njk
 ---
 layout: layouts/base.njk
-title: Card Demo
-permalink: /card/index.html
+title: Portofolio Demo
+permalink: /portofolio/index.html
+pageCss: page
 ---
 ```
 
-Then build or run dev mode, and Eleventy will generate:
+Then run build or dev mode, and Eleventy will generate:
 
 ```text
-dist/card/index.html
+dist/portofolio/index.html
 ```
 
----
+# Editing workflow
 
-# How to edit the template
-
-## Edit content / markup
-
+## Edit templates
 Work in:
 
 - `src/*.njk`
 - `src/_includes/layouts/`
 - `src/_includes/partials/`
+- `src/_includes/sections/`
 
-## Edit styles
+## Edit site-wide data
+Work in:
 
+- `src/_data/site.json`
+
+## Edit CSS
 Work in:
 
 - `src/assets/css/`
 
 ## Edit JavaScript
-
 Work in:
 
 - `src/assets/js/`
 
----
+## Edit static assets
+Work in:
+
+- `src/assets/images/`
+- `src/assets/icons/`
 
 # Distribution workflow
 
-This project can be used in two ways.
+Pehtheme can be used in two ways.
 
-## 1) Use as a development starter
+## 1) As a development starter
+Clone the repository, edit the templates, CSS, JS, and content data, then build your site.
 
-Clone the repository, edit templates, styles, and scripts, then build your site.
-
-## 2) Use as a ready-to-copy HTML template
-
-After running:
+## 2) As a ready-to-copy HTML template
+Run:
 
 ```bash
 pnpm build
 ```
 
-you can take the generated files from `dist/` and:
+Then use the contents of `dist/` to:
 
-- upload them to a static host
-- deploy them to Cloudflare Pages
-- distribute them as a plain HTML template package
-- reuse them in another project
-
----
+- deploy to a static host
+- upload to Cloudflare Pages
+- package as a static HTML template
+- copy into another project
 
 # Deploying to Cloudflare Pages
 
@@ -455,72 +552,34 @@ Pehtheme can be deployed directly to **Cloudflare Pages**.
 ## Recommended settings
 
 ### Build command
-
 ```bash
 pnpm build
 ```
 
 ### Build output directory
-
 ```text
 dist
 ```
 
-If your repository is connected to Cloudflare Pages, those settings are usually enough.
+That is usually enough for a standard Cloudflare Pages deployment.
 
----
+# Recommended workflow
 
-# Suggested development workflow
-
-## When working on templates and styling
-
+## If you are editing templates and styling
 Run:
 
 ```bash
 pnpm dev
 ```
 
-Use this for:
-
-- editing `.njk`
-- editing Tailwind / CSS
-- working on layouts and partials
-
----
-
-## When working on JavaScript only
-
+## If you are editing templates, styling, and JavaScript interactions
 Run:
 
 ```bash
-pnpm watch:js
+pnpm devjs
 ```
 
-Use this for:
-
-- component behavior
-- dark mode / toggle / carousel logic
-- script experiments
-
----
-
-## When working on frontend assets together
-
-Run:
-
-```bash
-pnpm dev:assets
-```
-
-Use this for:
-
-- CSS + JS work together
-- interaction + styling adjustments
-
----
-
-## Before deployment or distribution
-
+## Before publishing or distributing
 Run:
 
 ```bash
@@ -529,15 +588,22 @@ pnpm build
 
 Then use the contents of `dist/`.
 
----
+# Archive
+
+The repository includes an archive of the earlier pre-Eleventy template version:
+
+```text
+archive/pre-11ty-template/
+```
+
+This is kept for reference only and is not part of the active stack.
 
 # Notes
 
-- `dist/` is part of the project output and may be committed if you want to distribute ready-built HTML template files directly from the repository.
-- `archive/` stores older template iterations or abandoned stack attempts.
-- This project intentionally keeps the stack small and focused on static HTML templating.
-
----
+- `dist/` may be committed if you want the repository to include ready-built HTML template output.
+- `archive/` contains the older pre-11ty version of the template.
+- The active stack is now **Eleventy + Nunjucks + Tailwind CSS + esbuild**.
+- The project intentionally stays focused on **static HTML template development**.
 
 # License
 
