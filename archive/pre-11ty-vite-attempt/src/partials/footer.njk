@@ -1,0 +1,22 @@
+<footer class="border-t border-slate-200 bg-slate-50">
+  <div class="mx-auto max-w-6xl px-6 py-10">
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <div>
+        <h2 class="text-lg font-semibold text-slate-900">{{ site.name }}</h2>
+        <p class="mt-3 max-w-xl text-sm leading-7 text-red-600">
+          {{ site.description }}
+        </p>
+      </div>
+
+      <div class="space-y-2 text-sm text-slate-600">
+        <p><strong class="text-slate-900">Email:</strong> {{ site.email }}</p>
+        <p><strong class="text-slate-900">Phone:</strong> {{ site.phone }}</p>
+        <p><strong class="text-slate-900">Location:</strong> {{ site.location }}</p>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-slate-200 pt-6 text-sm text-slate-500">
+      <p>&copy; {{ currentYear }} {{ site.name }}. {{ site.footerText }}</p>
+    </div>
+  </div>
+</footer>

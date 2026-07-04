@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Contact" %}
+{% set eyebrow = "Contact" %}
+{% set heading = "Use a dedicated contact page with a reusable contact section." %}
+{% set description = "This page is ready for a future real contact form, but the template structure is already in place." %}
+
+{% block content %}
+  {% include "partials/page-header.njk" %}
+  {% include "partials/sections/contact-form.njk" %}
+{% endblock %}

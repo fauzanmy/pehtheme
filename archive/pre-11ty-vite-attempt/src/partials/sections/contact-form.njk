@@ -1,0 +1,59 @@
+<section class="bg-white">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(320px,1.1fr)]">
+	<div>
+	  <h2 class="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
+		Let’s talk about your next project
+	  </h2>
+	  <p class="mt-4 max-w-xl text-base leading-7 text-slate-600">
+		This contact section is still a static HTML placeholder, but its structure is ready to be turned into a real form later.
+	  </p>
+
+		<div class="mt-8 space-y-4 text-sm text-slate-600">
+		<p><strong class="text-slate-900">Email:</strong> {{ site.email }}</p>
+		<p><strong class="text-slate-900">Phone:</strong> {{ site.phone }}</p>
+		<p><strong class="text-slate-900">Office:</strong> {{ site.location }}</p>
+		</div>
+	</div>
+
+	<div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+	  <form class="space-y-5">
+		<div>
+		  <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Name</label>
+		  <input
+			id="name"
+			type="text"
+			class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-0"
+			placeholder="Your name"
+		  >
+		</div>
+
+		<div>
+		  <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
+		  <input
+			id="email"
+			type="email"
+			class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-0"
+			placeholder="you@example.com"
+		  >
+		</div>
+
+		<div>
+		  <label for="message" class="mb-2 block text-sm font-medium text-slate-700">Message</label>
+		  <textarea
+			id="message"
+			rows="6"
+			class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none ring-0"
+			placeholder="Tell us a little about your project"
+		  ></textarea>
+		</div>
+
+		<button
+		  type="submit"
+		  class="inline-flex rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white"
+		>
+		  Send message
+		</button>
+	  </form>
+	</div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+{
+	"name": "Pehtheme",
+	"tagline": "HTML template starter",
+	"description": "Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.",
+	"email": "hello@example.com",
+	"phone": "+62 812 3456 7890",
+	"location": "Banda Aceh, Indonesia",
+	"footerText": "Built with Eleventy, Nunjucks, and Tailwind CSS.",
+	"year": "2026"
+}

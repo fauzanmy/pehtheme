@@ -1,0 +1,5 @@
+@layer components {
+  .pagination {
+    @apply flex items-center gap-2;
+  }
+}

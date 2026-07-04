@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% if title %}
+    <title>{{ title }} - {{ site.name }}</title>
+  {% else %}
+    <title>{{ site.name }}</title>
+  {% endif %}
+
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body class="bg-white text-slate-900">
+  {% include "partials/header.njk" %}
+
+  <main id="content">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+</body>
+</html>

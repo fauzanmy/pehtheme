@@ -1,0 +1,9 @@
+@layer components {
+  .site-nav__list {
+    @apply flex flex-wrap items-center gap-6 text-sm font-medium text-slate-700;
+  }
+
+  .site-nav__link {
+    @apply text-slate-700 hover:text-slate-900;
+  }
+}

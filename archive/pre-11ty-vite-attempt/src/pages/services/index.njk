@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Services" %}
+{% set eyebrow = "Services" %}
+{% set heading = "Service pages can be built from reusable sections instead of one giant template file." %}
+{% set description = "Keep service summaries, CTA blocks, and supporting content modular so you can reuse them across multiple pages." %}
+
+{% block content %}
+  {% include "partials/page-header.njk" %}
+  {% include "partials/sections/service-list.njk" %}
+  {% include "partials/sections/cta.njk" %}
+{% endblock %}
