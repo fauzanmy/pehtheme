@@ -404,94 +404,129 @@ src/assets/js/
 │   └── shadow-effect.js
 ├── utils/
 │   └── dom-ready.js
-├── home.js
-└── main.js
+├── app-module.js
+├── home-module.js
+├── app-bundle.js
+└── home-bundle.js
 ```
+
+---
+
+## JavaScript output modes
+
+Pehtheme provides **two JavaScript output modes**:
+
+### 1) Module build
+Modern ES module output for projects that want:
+
+- `type="module"`
+- async imports
+- code splitting
+- chunked module loading
+
+Output files:
+
+```text
+dist/assets/js/
+├── app-module.js
+├── home-module.js
+└── chunks/
+```
+
+Typical usage:
+
+```html
+<script type="module" src="/assets/js/app-module.js"></script>
+<script type="module" src="/assets/js/home-module.js"></script>
+```
+
+---
+
+### 2) Static bundle build
+Classic bundled output for projects that want plain static script tags without module loading.
+
+Output files:
+
+```text
+dist/assets/js/
+├── app-bundle.js
+└── home-bundle.js
+```
+
+Typical usage:
+
+```html
+<script defer src="/assets/js/app-bundle.js"></script>
+<script defer src="/assets/js/home-bundle.js"></script>
+```
+
+This mode is useful when you want the final HTML template to be easy to copy, distribute, or drop into a simple static hosting environment without using module script tags.
+
+---
 
 ## JavaScript entry files
 
-### `main.js`
-Global JavaScript entry for all pages.
+### `app-module.js`
+Global JavaScript entry for all pages using **ES module output**.
 
-Typical usage:
+Typical use:
+- modern module-based global site behavior
+- async imports for shared UI features
+
+### `home-module.js`
+Homepage-specific JavaScript entry for **ES module output**.
+
+Typical use:
+- homepage-only module logic
+- carousel, marquee, and other home-only interactions
+
+### `app-bundle.js`
+Global JavaScript entry for **classic bundled output**.
+
+Typical use:
 - dark mode
 - mobile toggle
-- header interactions
-- global UI behavior
+- site-wide interactions
+- classic `<script defer>` loading
 
-### `home.js`
-Homepage-specific JavaScript entry.
+### `home-bundle.js`
+Homepage-specific JavaScript entry for **classic bundled output**.
 
-Typical usage:
+Typical use:
 - carousel
 - marquee
-- homepage-only interactions
+- homepage-only bundled interactions
 
-## Async import pattern
-
-Pehtheme uses a lightweight async import pattern in entry files.
-
-Example:
-
-```js
-import { domReady } from './utils/dom-ready.js';
-
-domReady(async () => {
-	await import('./features/dark-mode.js');
-	await import('./features/shadow-effect.js');
-	await import('./components/toggle.js');
-});
-```
-
-Because of this, esbuild may generate chunk files for async-loaded modules during bundling.
-
-# Static assets
-
-Pehtheme includes these asset types inside `src/assets/`:
-
-```text
-src/assets/
-├── css/
-├── icons/
-├── images/
-└── js/
-```
-
-## Build behavior
-
-- `css/` → compiled into `dist/assets/css/`
-- `js/` → bundled into final JS output
-- `images/` → copied to `dist/assets/images/`
-- `icons/` → copied to `dist/assets/icons/`
-
-# Working with pages
-
-## Add a new page
-
-Create a new `.njk` file inside `src/`.
-
-Example:
-
-```text
-src/portofolio.njk
-```
-
-Example front matter:
-
-```njk
 ---
-layout: layouts/base.njk
-title: Portofolio Demo
-permalink: /portofolio/index.html
-pageCss: page
----
+
+## Module build vs bundle build
+
+### Module build
+Use the `*-module.js` entries when you want modern ES module output.
+
+Examples:
+
+- `app-module.js`
+- `home-module.js`
+
+This build can produce chunk files for async-loaded modules.
+
+### Bundle build
+Use the `*-bundle.js` entries when you want classic static JavaScript files.
+
+Examples:
+
+- `app-bundle.js`
+- `home-bundle.js`
+
+These are intended for plain HTML usage such as:
+
+```html
+<script defer src="/assets/js/app-bundle.js"></script>
 ```
 
-Then run build or dev mode, and Eleventy will generate:
-
-```text
-dist/portofolio/index.html
-```
+No automatic JavaScript mode switching is enforced by the template.  
+Pehtheme simply provides both outputs, and users can decide which files they want to load in their own HTML templates.
 
 # Editing workflow
 
