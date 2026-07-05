@@ -1,9 +1,24 @@
+/**
+ * Component: Navigation
+ * Primary desktop navigation layout and interaction styles.
+ * Pehtheme HTML
+ */
+ 
 @layer components {
-	.site-nav__list {
-		@apply flex flex-wrap items-center gap-6 text-sm font-medium text-slate-700;
+	.main-navigation {
+
 	}
 
-	.site-nav__link {
-		@apply text-slate-700 hover:text-slate-900;
+	.menu-toggle {
+
 	}
+
+	.primary-menu-container {
+
+	}
+
+	.nav-links {
+
+	}
+	
 }

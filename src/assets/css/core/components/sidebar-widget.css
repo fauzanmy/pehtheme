@@ -1,3 +1,9 @@
+/**
+ * Component: Sidebar Widget
+ * Sidebar widget container and content block styles.
+ * Pehtheme HTML
+ */
+ 
 @layer components {
 	.widget-area {
 		@apply flex flex-col gap-8;

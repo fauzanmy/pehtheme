@@ -1,3 +1,9 @@
+/**
+ * Component: Mobile Navigation
+ * Off-canvas and mobile menu styles for small screens.
+ * Pehtheme HTML
+ */
+ 
 @layer components {
 	.site-nav-mobile {
 		@apply hidden;

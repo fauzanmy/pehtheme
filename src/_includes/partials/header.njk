@@ -1,18 +1,33 @@
+<!-- ===== Site Header ===== -->
 <header class="site-header">
-  <div class="inner">
-    <a href="/" class="site-brand">
-      {{ site.name }}
-    </a>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-      <ul class="site-nav__list">
-        <li><a class="site-nav__link" href="/">Home</a></li>
-        <li><a class="site-nav__link" href="/about/">About</a></li>
-        <li><a class="site-nav__link" href="/services/">Services</a></li>
-        <li><a class="site-nav__link" href="/page/">Page</a></li>
-        <li><a class="site-nav__link" href="/single/">Post</a></li>
-        <li><a class="site-nav__link" href="/contact/">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="inner flex items-center relative">
+
+	<div class="site-branding pr-4">
+	  
+		<a href="/" class="site-title">
+			{{ site.name }}
+		</a>
+		<p class="site-description hidden">
+			{{ site.description }}
+		</p>
+
+	</div>
+
+	<nav class="main-navigation ml-auto overflow-x-auto" aria-label="Primary navigation">
+
+	  <ul class="flex whitespace-nowrap space-x-4">
+		<li><a class="hover:text-blawu" href="/">Home</a></li>
+		<li><a class="hover:text-blawu" href="/about/">About</a></li>
+		<li><a class="hover:text-blawu" href="/services/">Services</a></li>
+		<li><a class="hover:text-blawu" href="/page/">Page</a></li>
+		<li><a class="hover:text-blawu" href="/single/">Blog Post</a></li>
+		<li><a class="hover:text-blawu" href="/contact/">Contact</a></li>
+	  </ul>
+
+	</nav>
+
   </div>
+
 </header>
+<!-- ===== /Site Header ===== -->

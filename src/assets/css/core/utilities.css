@@ -11,8 +11,8 @@
  * - Scrollbar helpers
  * - WordPress helper classes
  *
- * @package UIAceh
- * @since 1.5.2
+ * @package Pehtheme
+ * @since 2.1.0
  */
 
 @layer utilities {
@@ -103,5 +103,9 @@
 	.skip-link,
 	.screen-reader-text {
 		@apply hidden;
+	}
+
+	.no-results {
+
 	}
 }

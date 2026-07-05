@@ -1,3 +1,9 @@
+/**
+ * Component: Button
+ * Reusable button styles for links and actions.
+ * Pehtheme HTML
+ */
+ 
 @layer components {
 	.card {
 		@apply rounded-2xl border border-slate-200 bg-white p-6;

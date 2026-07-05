@@ -23,28 +23,43 @@
 
 </head>
 
-<body class="bg-white text-slate-900">
+<body>
 	
-	<div class>
+	<div id="page" class="site">
 
-		<header class="site-header">
-  <div class="inner">
-    <a href="/" class="site-brand">
-      Pehtheme
-    </a>
+		<!-- ===== Site Header ===== -->
+<header class="site-header">
 
-    <nav class="site-nav" aria-label="Primary navigation">
-      <ul class="site-nav__list">
-        <li><a class="site-nav__link" href="/">Home</a></li>
-        <li><a class="site-nav__link" href="/about/">About</a></li>
-        <li><a class="site-nav__link" href="/services/">Services</a></li>
-        <li><a class="site-nav__link" href="/page/">Page</a></li>
-        <li><a class="site-nav__link" href="/single/">Post</a></li>
-        <li><a class="site-nav__link" href="/contact/">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="inner flex items-center relative">
+
+	<div class="site-branding pr-4">
+	  
+		<a href="/" class="site-title">
+			Pehtheme
+		</a>
+		<p class="site-description hidden">
+			Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.
+		</p>
+
+	</div>
+
+	<nav class="main-navigation ml-auto overflow-x-auto" aria-label="Primary navigation">
+
+	  <ul class="flex whitespace-nowrap space-x-4">
+		<li><a class="hover:text-blawu" href="/">Home</a></li>
+		<li><a class="hover:text-blawu" href="/about/">About</a></li>
+		<li><a class="hover:text-blawu" href="/services/">Services</a></li>
+		<li><a class="hover:text-blawu" href="/page/">Page</a></li>
+		<li><a class="hover:text-blawu" href="/single/">Blog Post</a></li>
+		<li><a class="hover:text-blawu" href="/contact/">Contact</a></li>
+	  </ul>
+
+	</nav>
+
   </div>
+
 </header>
+<!-- ===== /Site Header ===== -->
 
 		<main id="content">
 			
@@ -56,7 +71,8 @@
 </section>
 		</main>
 
-		<footer class="border-t border-slate-200 bg-slate-50">
+		<!-- ===== Footer ===== -->
+<footer class="border-t border-slate-200 bg-slate-50">
   <div class="mx-auto max-w-6xl px-6 py-10">
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_320px]">
       <div>
@@ -78,6 +94,7 @@
     </div>
   </div>
 </footer>
+<!-- ===== /Footer ===== -->
 
 	</div>
 

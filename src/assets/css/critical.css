@@ -29,7 +29,7 @@
 /* Fonts, Colors & CSS Variables*/
 @import "./core/theme.css";
 @import "./core/base.css";
-
+@import "./core/layout.css";
 
 /* Components */
 @import "./core/components/button.css";

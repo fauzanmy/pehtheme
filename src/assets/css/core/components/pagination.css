@@ -1,3 +1,9 @@
+/**
+ * Component: Pagination
+ * Pagination styles for archive, listing, and article navigation.
+ * Pehtheme HTML
+ */
+
 @layer components {
 	.nav-links {
 		@apply flex items-center justify-center gap-2 mt-10;

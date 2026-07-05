@@ -1,3 +1,9 @@
+/**
+ * Component: Footer
+ * Site footer layout and footer content styles.
+ * Pehtheme HTML
+ */
+ 
 @layer components {
 	.site-footer {
 		@apply w-full mt-12 py-8 px-6 bg-gray-900 text-gray-300;

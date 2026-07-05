@@ -1,3 +1,9 @@
+/**
+ * Component: Nav
+ * Shared navigation list and menu link styles.
+ * Pehtheme HTML
+ */
+ 
 @layer components {
 	.main-navigation {
 		@apply hidden md:flex items-center gap-6;
