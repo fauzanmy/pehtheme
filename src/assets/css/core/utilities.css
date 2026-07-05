@@ -16,25 +16,6 @@
  */
 
 @layer utilities {
-	/* --------------------------------------------------------------------------
-	 * Base
-	 * ----------------------------------------------------------------------- */
-
-	html {
-		@apply scroll-smooth;
-	}
-
-	a {
-		@apply hover:text-blawu dark:hover:text-blawu/90;
-	}
-
-	img[loading='lazy'] {
-		@apply text-transparent;
-	}
-
-	hr {
-		@apply border-t border-blaga-500/30;
-	}
 
 	/* --------------------------------------------------------------------------
 	 * Visibility
@@ -52,10 +33,6 @@
 	.overlay,
 	.lightbox {
 		@apply absolute inset-0 bg-black/50;
-	}
-
-	.stretched-link::before {
-		@apply absolute inset-0 content-[''] pointer-events-auto;
 	}
 
 	/* --------------------------------------------------------------------------
