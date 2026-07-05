@@ -49,14 +49,6 @@
 		@apply hidden;
 	}
 
-	/* --------------------------------------------------------------------------
-	 * Layout Helpers
-	 * ----------------------------------------------------------------------- */
-
-	.scroll-horizontal {
-		@apply flex items-center flex-nowrap whitespace-nowrap overflow-x-auto;
-	}
-
 	.overlay,
 	.lightbox {
 		@apply absolute inset-0 bg-black/50;
@@ -72,28 +64,6 @@
 
 	.skeleton {
 		@apply flex items-center justify-center w-full h-full rounded-lg text-blaga-300/25;
-	}
-
-	/* --------------------------------------------------------------------------
-	 * Scrollbar
-	 * ----------------------------------------------------------------------- */
-
-	.scrollbar-thin {
-		scrollbar-width: thin;
-	}
-
-	.scrollbar-thin::-webkit-scrollbar {
-		width: 6px;
-		height: 6px;
-	}
-
-	.no-scrollbar {
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-
-	.no-scrollbar::-webkit-scrollbar {
-		display: none;
 	}
 
 	/* --------------------------------------------------------------------------
