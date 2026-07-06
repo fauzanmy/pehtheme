@@ -33,6 +33,7 @@
 
 /* Components */
 @import "./core/components/header.css";
+@import "./core/components/search-toggle.css";
 @import "./core/components/navigation.css";
 @import "./core/components/hero.css";
 @import "./core/components/heading.css";

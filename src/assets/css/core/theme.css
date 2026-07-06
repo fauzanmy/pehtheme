@@ -1,8 +1,10 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @theme {
 	/* Override font default ke Roboto */
-	--font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+	--font-sans: 'Roboto', sans-serif;
 
 	/* Warna Brand */
 	--color-primary: oklch(0.6231 0.188 259.81) /* #3b82f6 blue */;

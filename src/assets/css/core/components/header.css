@@ -6,13 +6,13 @@
  
 @layer components {
 	.site-header {
-		@apply sticky top-0 z-40 bg-white/50 backdrop-blur-md border border-white/20 rounded-xl shadow-sm;
+		@apply sticky top-0 z-40 bg-white/50 backdrop-blur-md border border-white/20 shadow-sm;
 	}
 
 	/* .site-branding {} */
 
 	.site-title {
-		@apply text-2xl font-bold;
+		@apply text-xl font-bold;
 	}
 
 	/* .site-description {} */
