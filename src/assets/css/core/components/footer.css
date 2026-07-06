@@ -5,10 +5,12 @@
  */
  
 @layer components {
+
 	.site-footer {
-		@apply w-full mt-12 py-8 px-6 bg-gray-900 text-gray-300;
+		@apply py-4 md:py-6;
 	}
 	.site-info {
 		@apply text-sm text-center text-gray-400;
 	}
+	
 }

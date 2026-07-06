@@ -1,0 +1,59 @@
+<!-- ===== Carousel Card ===== -->
+<section class="feature-content py-6 md:py-10 lg:py-12">
+
+	<div class="section-heading flex items-center justify-between mb-6">
+		<h2 class="section-title text-2xl font-bold leading-tight lg:text-3xl">
+			Carousel Card
+		</h2>
+
+		<button class="btn px-4 py-1 md:px-6 md:py-2 border-blaga-500/50 text-white bg-primary hover:bg-blawu active:bg-primary">
+			View All
+		</button>
+	</div>
+
+	<div class="carousel snap-x snap-mandatory overflow-x-auto border-b border-blaga-500/30 scrollbar-thin scrollbar-thumb-primary">
+		
+		<div class="flex space-x-6 pb-6 md:pb-10 lg:pb-12">
+
+		{% for post in cards %}
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="{{ post.url }}"
+					aria-label="Read article: {{ post.title }}"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="{{ post.image }}"
+						alt="{{ post.title }}"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="{{ post.date }}">
+						{{ post.date_label }}
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						{{ post.title }}
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						{{ post.excerpt }}
+					</p>
+
+				</div>
+			</article>
+
+		{% endfor %}
+
+		</div>
+
+	</div>
+
+</section>
+<!-- ===== /Carousel Card ===== -->

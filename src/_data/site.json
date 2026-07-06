@@ -1,6 +1,7 @@
 {
 	"name": "Pehtheme",
 	"tagline": "HTML template starter",
+	"lead": "This is the new Pehtheme static HTML template running on your site.",
 	"description": "Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.",
 	"email": "hello@example.com",
 	"phone": "+62 812 3456 7890",

@@ -1,0 +1,31 @@
+<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="{{ post.url }}"
+		aria-label="Read article: {{ post.title }}"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="{{ post.image }}"
+			alt="{{ post.title }}"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="{{ post.date }}">
+			{{ post.date_label }}
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			{{ post.title }}
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			{{ post.excerpt }}
+		</p>
+
+	</div>
+</article>

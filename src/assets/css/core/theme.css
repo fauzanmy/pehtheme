@@ -5,9 +5,9 @@
 	--font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
 
 	/* Warna Brand */
-	--color-primary: oklch(0.6231 0.188 259.81);
+	--color-primary: oklch(0.6231 0.188 259.81) /* #3b82f6 blue */;
 	--color-secondary: oklch(79.81% 0.1045 87.09);
-	--color-blawu: oklch(67.69% 0.1512 238.49);
+	--color-blawu: oklch(0.4882 0.2172 264.38);
 
 	/* Palette blaga */
 	--color-blaga-50: oklch(98.46% 0.0017 247.84);

@@ -38,7 +38,11 @@
 /* --------------------------------------------------------------------------
  * Components
  * ----------------------------------------------------------------------- */
-
+ @import "./core/components/button.css";
+ @import "./core/components/card.css";
+ @import "./core/components/footer.css";
+ @import "./core/components/entry-content.css";
+ 
 
  /* --------------------------------------------------------------------------
  * Utilities

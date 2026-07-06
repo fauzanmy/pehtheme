@@ -32,8 +32,7 @@
 @import "./core/layout.css";
 
 /* Components */
-@import "./core/components/button.css";
 @import "./core/components/header.css";
 @import "./core/components/navigation.css";
-@import "./core/components/navigation-mobile.css";
-@import "./core/components/page-header.css";
+@import "./core/components/hero.css";
+@import "./core/components/heading.css";

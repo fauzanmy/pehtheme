@@ -43,6 +43,9 @@
  * Components
  * ----------------------------------------------------------------------- */
 
+ @import "./core/components/button.css";
+ @import "./core/components/card.css";
+ @import "./core/components/footer.css";
  
 
 /* --------------------------------------------------------------------------

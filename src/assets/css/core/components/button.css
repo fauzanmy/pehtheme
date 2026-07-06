@@ -7,7 +7,7 @@
 @layer components {
 	/* Base */
 	.btn {
-		@apply inline-flex items-center justify-center rounded-full border font-medium transition-colors;
+		@apply inline-flex items-center justify-center rounded-full border font-medium transition-colors cursor-pointer;
 	}
 
 	/* Modifier */
@@ -20,7 +20,7 @@
 
 	/* Colors */
 	.btn-primary {
-		@apply bg-blaga-900 text-white border-blaga-900 hover:bg-blaga-800;
+		@apply bg-primary text-white hover:bg-blawu;
 	}
 	.btn-outline {
 		@apply bg-transparent text-blaga-900 border-blaga-300 hover:bg-blaga-50;

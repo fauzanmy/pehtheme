@@ -12,7 +12,6 @@
 	}
 
 	.grid {
-		@apply grid gap-4;
-	}
+		@apply grid gap-4 md:gap-6 lg:gap-8;	}
 
 }

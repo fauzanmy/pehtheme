@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	
-		<title>Page - Pehtheme</title>
+		<title>Blog posts - Pehtheme</title>
 	
 
 	<meta name="description" content="Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.">
@@ -27,7 +27,7 @@
 	
 	<div id="page" class="site">
 
-		<!-- ===== Site Header Default ===== -->
+		<!-- ===== Site Header ===== -->
 <header class="site-header">
 
   <div class="inner flex items-center relative">
@@ -43,40 +43,32 @@
 
 	</div>
 
-	<div class="ml-auto">
-		<button>
-			Q
-		</button>
-	</div>
+	<nav class="main-navigation ml-auto overflow-x-auto" aria-label="Primary navigation">
+
+	  <ul class="flex whitespace-nowrap space-x-4">
+		<li><a class="hover:text-blawu" href="/">Home</a></li>
+		<li><a class="hover:text-blawu" href="/about/">About</a></li>
+		<li><a class="hover:text-blawu" href="/services/">Services</a></li>
+		<li><a class="hover:text-blawu" href="/page/">Page</a></li>
+		<li><a class="hover:text-blawu" href="/blog-posts/">Blog Post</a></li>
+		<li><a class="hover:text-blawu" href="/contact/">Contact</a></li>
+	  </ul>
+
+	</nav>
 
   </div>
 
 </header>
-<!-- ===== /Site Header Default ===== -->
+<!-- ===== /Site Header ===== -->
 
 		<main id="content">
 			
-<!-- ===== Hero Section ===== -->
-<section class="hero bg-blaga-100/50">
-  <div class="inner">
-
-	  <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-blue-600">
-		HTML template starter
-	  </p>
-	  <h1 class="section-title text-4xl font-bold leading-tight lg:text-5xl text-blue-700/80">
-		Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.
-	  </h1>
-	  <p class="section-subtitle mt-3 text-xl leading-relaxed text-blue-600 lg:text-2xl">
-		This is the new Pehtheme static HTML template running on your site.
-	  </p>
-
+<section class="site-section">
+  <div class="site-shell">
+    <h1 class="section-heading">Page</h1>
+    <p class="section-lead">This is the generic page template.</p>
   </div>
 </section>
-<!-- ===== /Hero Section ===== -->
-
-<main>
-	
-</main>
 		</main>
 
 		<!-- ===== Footer ===== -->

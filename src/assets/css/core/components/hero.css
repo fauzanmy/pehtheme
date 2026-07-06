@@ -3,3 +3,7 @@
  * Hero section styles for landing page headers and callouts.
  * Pehtheme HTML
  */
+
+.hero {
+	@apply py-8 md:py-12;
+}
