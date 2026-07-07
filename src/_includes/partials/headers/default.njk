@@ -5,7 +5,7 @@
 
 	<div class="site-branding flex items-center justify-center space-x-2 pr-4">
 
-		<button class="flex items-center justify-center space-x-2 px-4 h-10 pl-3 pr-1  bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 rounded-full group cursor-pointer">
+		<button class="flex items-center justify-center space-x-2 px-4 h-10 pl-3 pr-1 bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 rounded-full group cursor-pointer toggle-button" data-target="main-navigation">
 			<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
 				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
 			</svg>
@@ -20,13 +20,34 @@
 		<a href="/" class="site-title rounded-full px-4 h-10 flex items-center bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 leading-0">
 			{{ site.name }}
 		</a>
+
 		<p class="site-description hidden">
 			{{ site.description }}
 		</p>
 
 	</div>
 
-	<div class="ml-auto">
+	<nav id="main-navigation" class="navigation absolute left-4 md:left-6 lg:left-8 right-4 md:right-6 lg:right-8 hidden" data-toggle-target aria-hidden="true">
+
+		<div class="rounded-full bg-blaga-100 flex items-center overflow-x-auto scrollbar-thin h-10">
+
+			<div class="absolute flex items-center justify-center h-10 w-12 bg-primary rounded-full">
+				X
+			</div>
+
+			<ul class="flex items-center justify-center space-x-4 whitespace-nowrap px-16">
+
+				{% for item in menu.primary %}
+					<li><a href="{{ item.url }}">{{ item.label }}</a></li>
+				{% endfor %}
+
+			</ul>
+
+		</div>
+		
+	</nav>
+
+	<div class="ml-auto z-40">
 		<button
 			class="search-toggle toggle-button bg-blaga-100"
 			data-target="search-form"

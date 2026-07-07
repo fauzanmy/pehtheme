@@ -1,1 +1,0 @@
-var e=document.getElementById("masthead"),s=document.querySelector(".site-branding");if(e&&s){let t=()=>{(window.scrollY||document.documentElement.scrollTop)>99?(e.classList.add("shadow-md"),s.classList.remove("py-4"),s.classList.add("py-2")):(e.classList.remove("shadow-md"),s.classList.remove("py-2"),s.classList.add("py-4"))};t(),window.addEventListener("scroll",t,{passive:!0})}
