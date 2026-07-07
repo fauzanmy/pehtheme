@@ -34,6 +34,8 @@
 
 		"build": "pnpm build:11ty && pnpm build:tailwind && pnpm build:js",
 
+		"build:icons": "node src/assets/js/build-icons.js src/assets/icons dist/assets/icons/sprite.svg",
+		
 		"format": "prettier . --write"
 	},
 
