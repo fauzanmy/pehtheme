@@ -31,10 +31,10 @@
 		"build:js:module": "esbuild ./src/assets/js/app-module.js ./src/assets/js/home-module.js --bundle --minify --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js",
 		"build:js:bundle": "esbuild ./src/assets/js/app-bundle.js ./src/assets/js/home-bundle.js --bundle --minify --outdir=./dist/assets/js",
 		"build:js": "pnpm build:js:module && pnpm build:js:bundle",
-
-		"build": "pnpm build:11ty && pnpm build:tailwind && pnpm build:js",
-
+		
 		"build:icons": "node src/assets/js/build-icons.js src/assets/icons dist/assets/icons/sprite.svg",
+		
+		"build": "pnpm build:11ty && pnpm build:tailwind && pnpm build:js && pnpm build:icons",
 		
 		"format": "prettier . --write"
 	},
