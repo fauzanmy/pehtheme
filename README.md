@@ -9,16 +9,25 @@ The final build is generated into `dist/`, so the project can be used in two way
 1. as a **development starter** for static websites, or  
 2. as a **ready-to-distribute HTML template package**.
 
+## Live demo
+
+Pehtheme is also available as a live demo on Cloudflare Pages:
+
+- **https://pehtheme.pages.dev/**
+
 ## Features
 
 - **Eleventy (11ty)** for static HTML generation
-- **Nunjucks templating** for layouts, partials, and reusable sections
+- **Nunjucks templating** for layouts, partials, reusable sections, and page components
 - **Tailwind CSS v4** for utility-first styling
 - **Three-layer CSS output**
   - `critical.css`
   - `page.css`
   - `single.css`
-- **esbuild** for modular JavaScript bundling
+- **esbuild** for JavaScript builds
+  - ES module output
+  - classic bundled output
+- **SVG sprite generation** from `src/assets/icons/`
 - **Single article template** included
 - **Static asset passthrough** for images and icons
 - Output ready for:
@@ -55,6 +64,13 @@ Build output is generated into `dist/`.
 Example final structure:
 
 ```text
+# Output structure
+
+Build output is generated into `dist/`.
+
+Example final structure:
+
+```text
 dist/
 ├── about/
 │   └── index.html
@@ -64,7 +80,18 @@ dist/
 │   │   ├── page.css
 │   │   └── single.css
 │   ├── icons/
-│   └── images/
+│   │   ├── egg-fried.svg
+│   │   ├── list.svg
+│   │   └── sprite.svg
+│   ├── images/
+│   └── js/
+│       ├── app-bundle.js
+│       ├── app-module.js
+│       ├── home-bundle.js
+│       ├── home-module.js
+│       └── chunks/
+├── blog-posts/
+│   └── index.html
 ├── contact/
 │   └── index.html
 ├── index.html
@@ -85,13 +112,23 @@ dist/
 ├── dist/
 ├── src/
 │   ├── _data/
+│   │   ├── cards.json
+│   │   ├── menu.json
+│   │   ├── posts.json
+│   │   ├── single.json
 │   │   └── site.json
 │   ├── _includes/
 │   │   ├── layouts/
 │   │   │   └── base.njk
 │   │   ├── partials/
+│   │   │   ├── card.njk
+│   │   │   ├── carousel.njk
+│   │   │   ├── cta.njk
 │   │   │   ├── footer.njk
-│   │   │   └── header.njk
+│   │   │   ├── header.njk
+│   │   │   ├── hero.njk
+│   │   │   ├── navigation.njk
+│   │   │   └── search-form.njk
 │   │   └── sections/
 │   ├── assets/
 │   │   ├── css/
@@ -99,6 +136,7 @@ dist/
 │   │   ├── images/
 │   │   └── js/
 │   ├── about.njk
+│   ├── blog-posts.njk
 │   ├── contact.njk
 │   ├── index.njk
 │   ├── page.njk
@@ -188,6 +226,46 @@ This runs:
 pnpm build
 ```
 
+## `pnpm build:icons`
+
+Generate the SVG sprite file from individual SVG icons stored in:
+
+```text
+src/assets/icons/
+```
+
+Output:
+
+`dist/assets/icons/sprite.svg`
+
+This is useful when you want to ship a single reusable SVG sprite for icon usage across templates.
+
+### Example:
+
+```
+src/assets/icons/
+├── egg-fried.svg
+└── list.svg
+```
+
+### This generates:
+
+```
+dist/assets/icons/sprite.svg
+```
+
+### Typical usage
+
+You can reference an icon from the generated sprite like this:
+
+```
+<svg aria-hidden="true">
+	<use href="/assets/icons/sprite.svg#list"></use>
+</svg>
+```
+
+The sprite build is also included in the full production build workflow.
+
 ## `pnpm format`
 
 Format project files with Prettier.
@@ -247,21 +325,19 @@ src/
 
 # Data
 
-Site-level shared data lives in:
+Pehtheme uses Eleventy global data files stored in:
 
 ```text
-src/_data/site.json
+src/_data/
 ```
 
-Use this file for project-wide values such as:
+Current data files include:
 
-- site title
-- tagline
-- description
-- footer text
-- navigation labels
-- social links
-- contact information
+- site.json → site title, description, footer text, general site metadata
+- menu.json → navigation/menu data
+- posts.json → post listing / blog card demo data
+- cards.json → generic card/grid demo content
+- single.json → single article page data
 
 
 # CSS architecture
@@ -404,11 +480,14 @@ src/assets/js/
 │   └── shadow-effect.js
 ├── utils/
 │   └── dom-ready.js
+├── build-icons.js
 ├── app-module.js
 ├── home-module.js
 ├── app-bundle.js
 └── home-bundle.js
 ```
+
+Module output may generate additional files in `dist/assets/js/chunks/` for async-loaded modules.
 
 ---
 
