@@ -1,0 +1,58 @@
+/**
+ * Utility Classes
+ *
+ * Reusable helper classes shared across the theme.
+ *
+ * Includes:
+ * - Base element helpers
+ * - Visibility helpers
+ * - Layout helpers
+ * - Loading
+ * - Scrollbar helpers
+ * - WordPress helper classes
+ *
+ * @package Pehtheme
+ * @since 2.1.0
+ */
+
+@layer utilities {
+
+	/* --------------------------------------------------------------------------
+	 * Visibility
+	 * ----------------------------------------------------------------------- */
+
+	.show,
+	.open {
+		@apply block;
+	}
+
+	.close {
+		@apply hidden;
+	}
+
+	.overlay,
+	.lightbox {
+		@apply absolute inset-0 bg-black/50;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * Loading
+	 * ----------------------------------------------------------------------- */
+
+	.skeleton {
+		@apply flex items-center justify-center w-full h-full rounded-lg text-blaga-300/25;
+	}
+
+	/* --------------------------------------------------------------------------
+	 * WordPress
+	 * ----------------------------------------------------------------------- */
+
+	.skip-link,
+	.screen-reader-text {
+		@apply hidden;
+	}
+
+	.no-results {
+
+	}
+}

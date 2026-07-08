@@ -1,0 +1,5 @@
+@layer components {
+	.no-results {
+		@apply text-center py-16 text-gray-500;
+	}
+}

@@ -1,0 +1,74 @@
+[
+  {
+	"title": "A complete guide on how to easily build static websites using the Hugo framework for beginners",
+	"excerpt": "Learn the basic steps to set up your own website development environment using Hugo efficiently, quickly, and in a way that is very friendly for web developers today.",
+	"date": "2024-01-12T08:30:00+07:00",
+	"date_label": "Jan 12, 2024",
+	"image": "https://picsum.photos/id/101/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "An in-depth analysis regarding the significant performance differences between Hugo compared to the popular WordPress platform",
+	"excerpt": "In this article, we will discuss the technical comparison between access speed and configuration flexibility offered by Hugo when compared to the WordPress CMS.",
+	"date": "2024-02-20T14:15:22+07:00",
+	"date_label": "Feb 20, 2024",
+	"image": "https://picsum.photos/id/69/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "Tips and tricks for optimizing images on your website so that loading performance becomes much faster",
+	"excerpt": "Using properly optimized images will greatly help improve your website's performance score on search engines and provide a much more satisfying user experience overall.",
+	"date": "2024-03-05T09:45:10+07:00",
+	"date_label": "Mar 05, 2024",
+	"image": "https://picsum.photos/id/696/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "How to deploy static websites to free hosting providers like Netlify or Vercel in an easy way",
+	"excerpt": "Deploying your website is now easier with automatic integration between your code repository and modern hosting services that fully support the Git workflow directly.",
+	"date": "2024-04-18T16:20:00+07:00",
+	"date_label": "Apr 18, 2024",
+	"image": "https://picsum.photos/id/450/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "Understanding modern web programming concepts to build responsive user interfaces that are very interesting to look at",
+	"excerpt": "Grasping the fundamentals of HTML, CSS, and JavaScript is the key to creating a modern, responsive, and consistent user interface experience across all devices today.",
+	"date": "2024-05-22T11:10:45+07:00",
+	"date_label": "May 22, 2024",
+	"image": "https://picsum.photos/id/522/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "The importance of static website security and basic mitigation steps that must be taken by every owner",
+	"excerpt": "Although static websites tend to be safer, there are still several important security procedures that must be implemented to protect your site data from any attacks.",
+	"date": "2024-06-10T10:05:30+07:00",
+	"date_label": "Jun 10, 2024",
+	"image": "https://picsum.photos/id/680/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "Improving SEO-friendly content writing techniques so that your website is easily found by new potential visitors",
+	"excerpt": "Search engine optimization is not just about technical aspects, but also about how you present content that is relevant, informative, and well-structured for readers.",
+	"date": "2024-07-01T15:30:15+07:00",
+	"date_label": "Jul 01, 2024",
+	"image": "https://picsum.photos/id/790/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "Why transitioning from traditional content management systems to static site generators is the best choice right now",
+	"excerpt": "Many developers are switching to static site generators because they offer high-level security, incredible access speeds, and very minimal operational costs for sites.",
+	"date": "2024-07-05T12:00:00+07:00",
+	"date_label": "Jul 05, 2024",
+	"image": "https://picsum.photos/id/830/720/420",
+	"url": "/single/"
+  },
+  {
+	"title": "Exploration of the latest web technology trends that will dominate the software development industry in the future",
+	"excerpt": "The web development industry continues to move dynamically with the emergence of various new tools and frameworks aimed at improving productivity for all developers.",
+	"date": "2024-07-06T09:00:00+07:00",
+	"date_label": "Jul 06, 2024",
+	"image": "https://picsum.photos/id/950/720/420",
+	"url": "/single/"
+  }
+]

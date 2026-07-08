@@ -1,0 +1,20 @@
+@layer components {
+	.comments-area {
+		@apply mt-12;
+	}
+	.comment-list {
+		@apply flex flex-col gap-6;
+	}
+	.comment {
+		@apply flex flex-col gap-2;
+	}
+	.comment-author {
+		@apply font-semibold text-gray-900;
+	}
+	.comment-meta {
+		@apply text-xs text-gray-500;
+	}
+	.comment-content {
+		@apply text-sm text-gray-700;
+	}
+}

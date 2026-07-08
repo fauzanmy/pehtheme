@@ -1,0 +1,32 @@
+/**
+ * Component: Card
+ * Reusable card styles for links and actions.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+
+	/* .card {} */
+
+
+	/* 1 column */
+	/* .card-basis-100 { @apply basis-full; }  */
+
+	/* 2 columns */
+	.card-basis-50 {
+		@apply
+			basis-full
+			md:basis-[calc(70%-1rem)]
+			lg:basis-[calc(50%-1rem)]
+		;
+	}
+
+	/* 3 columns */
+	.card-basis-33 {
+		@apply 
+			basis-[calc(100%-0.25rem)]
+			md:basis-[calc(50%-0.75rem)]
+			lg:basis-[calc(33.3%-1rem)]
+		;
+	}
+}

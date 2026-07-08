@@ -1,0 +1,17 @@
+/**
+ * Component: Sidebar Widget
+ * Sidebar widget container and content block styles.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	.widget-area {
+		@apply flex flex-col gap-8;
+	}
+	.widget {
+		@apply bg-white rounded-lg p-5 shadow-sm;
+	}
+	.widget-title {
+		@apply text-base font-semibold mb-3 text-gray-900;
+	}
+}

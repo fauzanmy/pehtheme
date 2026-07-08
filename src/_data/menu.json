@@ -1,0 +1,113 @@
+{
+
+	"primary": [
+		{
+		"label": "Home",
+		"url": "/",
+		"title": "Back to homepage"
+		},
+		{
+		"label": "About",
+		"url": "/about/"
+		},
+		{
+		"label": "Services",
+		"url": "/services/"
+		},
+		{
+		"label": "Portfolio",
+		"url": "/portfolio/"
+		},
+		{
+		"label": "Blog",
+		"url": "/blog/"
+		},
+		{
+		"label": "Contact",
+		"url": "/contact/"
+		},
+		{
+		"label": "Projects",
+		"url": "/projects/"
+		},
+		{
+		"label": "Documentation",
+		"url": "/docs/"
+		},
+		{
+		"label": "Careers",
+		"url": "/careers/"
+		},
+		{
+		"label": "Pricing",
+		"url": "/pricing/"
+		},
+		{
+		"label": "Support",
+		"url": "/support/"
+		},
+		{
+		"label": "Features",
+		"url": "/features/"
+		},
+		{
+		"label": "Team",
+		"url": "/team/"
+		},
+		{
+		"label": "Testimonials",
+		"url": "/testimonials/"
+		},
+		{
+		"label": "FAQ",
+		"url": "/faq/"
+		},
+		{
+		"label": "Privacy Policy",
+		"url": "/privacy/"
+		},
+		{
+		"label": "Terms of Service",
+		"url": "/terms/"
+		},
+		{
+		"label": "Shop",
+		"url": "/shop/"
+		},
+		{
+		"label": "News",
+		"url": "/news/"
+		},
+		{
+		"label": "Events",
+		"url": "/events/"
+		}
+	],
+
+	"footer": [
+		{
+			"label": "Privacy Policy",
+			"url": "/privacy-policy/"
+		},
+		{
+			"label": "Contact",
+			"url": "/contact/"
+		}
+	],
+
+	"social": [
+		{
+			"label": "GitHub",
+			"url": "https://github.com/example",
+			"target": "_blank",
+			"rel": "noopener noreferrer"
+		},
+		{
+			"label": "X",
+			"url": "https://x.com/example",
+			"target": "_blank",
+			"rel": "noopener noreferrer"
+		}
+	]
+
+}

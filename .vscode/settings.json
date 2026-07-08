@@ -1,0 +1,28 @@
+{
+	"files.associations": {
+		"*.njk": "html"
+	},
+
+	"emmet.includeLanguages": {
+		"njk": "html"
+	},
+
+	"emmet.triggerExpansionOnTab": true,
+
+	"tailwindCSS.includeLanguages": {
+		"njk": "html"
+	},
+
+	"tailwindCSS.experimental.classRegex": [
+		["class=\"([^\"]*)\"", 1],
+		["class='([^']*)'", 1]
+	],
+
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4
+}

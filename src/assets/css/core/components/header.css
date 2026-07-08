@@ -1,0 +1,20 @@
+/**
+ * Component: Header
+ * Site header layout and masthead styles.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	.site-header {
+		@apply sticky top-0 z-40 bg-white/50 backdrop-blur-md border border-white/20 shadow-sm;
+	}
+
+	/* .site-branding {} */
+
+	.site-title {
+		@apply text-xl font-bold;
+	}
+
+	/* .site-description {} */
+
+}

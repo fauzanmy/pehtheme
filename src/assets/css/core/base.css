@@ -1,0 +1,20 @@
+@layer base {
+
+	html {
+		@apply scroll-smooth;
+	}
+
+	a {
+		@apply hover:text-blawu dark:hover:text-blawu/90;
+	}
+
+	/* Hide image ALT text when image fails to load */
+	img[loading='lazy'] {
+		@apply text-transparent;
+	}
+
+	hr {
+		@apply border-t border-blaga-500/30;
+	}
+	
+}

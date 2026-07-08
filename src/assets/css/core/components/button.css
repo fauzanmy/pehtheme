@@ -1,0 +1,28 @@
+/**
+ * Component: Button
+ * Reusable button styles for links and actions.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	/* Base */
+	.btn {
+		@apply inline-flex items-center justify-center rounded-full border font-medium transition-colors cursor-pointer;
+	}
+
+	/* Modifier */
+	.btn-md {
+		@apply px-4 py-2 text-sm;
+	}
+	.btn-xl {
+		@apply px-6 py-3 text-lg;
+	}
+
+	/* Colors */
+	.btn-primary {
+		@apply bg-primary text-white hover:bg-blawu;
+	}
+	.btn-outline {
+		@apply bg-transparent text-blaga-900 border-blaga-300 hover:bg-blaga-50;
+	}
+}

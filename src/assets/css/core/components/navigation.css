@@ -1,0 +1,14 @@
+/**
+ * Component: Navigation
+ * Primary desktop navigation layout and interaction styles.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	.navigation {
+		@apply
+			absolute 
+			left-4 md:left-6 lg:left-8 right-4 md:right-6 lg:right-8
+		;
+	}	
+}

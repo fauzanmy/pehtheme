@@ -1,0 +1,55 @@
+/**
+ * Page CSS
+ *
+ * Entry point for all pages.
+ *
+ * Used by:
+ * - Front Page
+ * - Blog Index
+ * - Archive
+ * - Category
+ * - Tag
+ * - Search
+ *
+ * Dependencies:
+ * - critical.css (inline)
+ *
+ * Import Order:
+ * 1. Tailwind Layers
+ * 2. Theme
+ * 3. Components
+ * 4. Layouts
+ * 5. Pages
+ * 6. Utilities
+ *
+ * @package UIAceh
+ * @since 1.5.2
+ */
+
+/* --------------------------------------------------------------------------
+ * Tailwind Layers
+ * ----------------------------------------------------------------------- */
+
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* --------------------------------------------------------------------------
+ * Theme
+ * ----------------------------------------------------------------------- */
+
+@import "./core/theme.css";
+
+/* --------------------------------------------------------------------------
+ * Components
+ * ----------------------------------------------------------------------- */
+
+ @import "./core/components/button.css";
+ @import "./core/components/card.css";
+ @import "./core/components/footer.css";
+ 
+
+/* --------------------------------------------------------------------------
+ * Utilities
+ * ----------------------------------------------------------------------- */
+
+@import "./core/utilities.css";

@@ -1,0 +1,32 @@
+/**
+ * Component: Nav
+ * Shared navigation list and menu link styles.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	.main-navigation {
+		@apply hidden md:flex items-center gap-6;
+	}
+	.menu-toggle {
+		@apply md:hidden inline-flex items-center justify-center p-2 rounded-md;
+	}
+	.primary-menu-container {
+		@apply flex flex-col md:flex-row gap-1 md:gap-6;
+	}
+	.menu-item {
+		@apply relative;
+	}
+	.menu-item > a {
+		@apply block px-3 py-2 text-gray-700 hover:text-gray-900;
+	}
+	.current-menu-item > a {
+		@apply text-gray-900 font-semibold;
+	}
+	.menu-item-has-children > a {
+		@apply flex items-center gap-1;
+	}
+	.sub-menu {
+		@apply md:absolute md:top-full md:left-0 md:min-w-[180px] md:bg-white md:shadow-lg md:rounded-md md:py-2 hidden md:group-hover:block;
+	}
+}

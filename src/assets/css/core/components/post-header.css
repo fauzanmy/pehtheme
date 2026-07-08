@@ -1,0 +1,11 @@
+@layer components {
+	.entry-header {
+		@apply mb-6;
+	}
+	.entry-title {
+		@apply text-3xl md:text-4xl font-bold text-gray-900 mb-3;
+	}
+	.entry-meta {
+		@apply text-sm text-gray-500 flex items-center gap-3;
+	}
+}

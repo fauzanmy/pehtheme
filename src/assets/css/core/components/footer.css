@@ -1,0 +1,16 @@
+/**
+ * Component: Footer
+ * Site footer layout and footer content styles.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+
+	.site-footer {
+		@apply py-4 md:py-6;
+	}
+	.site-info {
+		@apply text-sm text-center text-gray-400;
+	}
+	
+}

@@ -1,0 +1,8 @@
+@layer components {
+	.page-header {
+		@apply mb-8 pb-4 border-b border-gray-200;
+	}
+	.page-title {
+		@apply text-2xl md:text-3xl font-bold text-gray-900;
+	}
+}

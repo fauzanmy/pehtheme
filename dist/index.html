@@ -1,0 +1,1333 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+		<title>Home - Pehtheme</title>
+	
+
+	<meta name="description" content="Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.">
+	
+	<link rel="stylesheet" href="/assets/css/critical.css">
+
+	
+		<link rel="stylesheet" href="/assets/css/page.css">
+	
+
+	<link rel="icon" href="/assets/icons/egg-fried.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+	
+	<div id="page" class="site">
+
+		<!-- ===== Site Header Default ===== -->
+<header class="site-header">
+
+  <div class="inner flex items-center relative">
+
+	<div class="site-branding flex items-center justify-center space-x-2 pr-4">
+
+		<button class="flex items-center justify-center space-x-2 px-4 h-10 pl-3 pr-1 bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 rounded-full group cursor-pointer toggle-button" data-target="main-navigation">
+			<svg class="size-6" aria-hidden="true">
+				<use href="/assets/icons/sprite.svg#list"></use>
+			</svg>
+
+			<span class="bg-primary text-white rounded-full p-2">
+				<svg class="group-hover:animate-spin" width="18" height="18" aria-hidden="true">
+					<use href="/assets/icons/sprite.svg#egg-fried"></use>
+				</svg>
+			</span>
+		</button>
+	  
+		<a href="/" class="site-title rounded-full px-4 h-10 flex items-center bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 leading-0">
+			Pehtheme
+		</a>
+
+		<p class="site-description hidden">
+			Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.
+		</p>
+
+	</div>
+
+
+	<!-- ===== Main Navigation ===== -->
+<nav id="main-navigation" class="navigation hidden" data-toggle-target aria-hidden="true">
+
+	<div class="rounded-full bg-blaga-100 flex items-center overflow-x-auto scrollbar-thin h-10">
+
+		<div class="absolute flex items-center justify-center h-10 w-10 rounded-full bg-blaga-100 group">
+			<span class="bg-primary text-white rounded-full p-1.5">
+				<svg class="group-hover:animate-spin" width="22" height="22" aria-hidden="true">
+					<use href="/assets/icons/sprite.svg#egg-fried"></use>
+				</svg>
+			</span>
+		</div>
+
+		<ul class="flex items-center justify-center space-x-5 whitespace-nowrap px-15">
+
+			
+
+				<li><a href="/">Home</a></li>
+
+			
+
+				<li><a href="/about/">About</a></li>
+
+			
+
+				<li><a href="/services/">Services</a></li>
+
+			
+
+				<li><a href="/portfolio/">Portfolio</a></li>
+
+			
+
+				<li><a href="/blog/">Blog</a></li>
+
+			
+
+				<li><a href="/contact/">Contact</a></li>
+
+			
+
+				<li><a href="/projects/">Projects</a></li>
+
+			
+
+				<li><a href="/docs/">Documentation</a></li>
+
+			
+
+				<li><a href="/careers/">Careers</a></li>
+
+			
+
+				<li><a href="/pricing/">Pricing</a></li>
+
+			
+
+				<li><a href="/support/">Support</a></li>
+
+			
+
+				<li><a href="/features/">Features</a></li>
+
+			
+
+				<li><a href="/team/">Team</a></li>
+
+			
+
+				<li><a href="/testimonials/">Testimonials</a></li>
+
+			
+
+				<li><a href="/faq/">FAQ</a></li>
+
+			
+
+				<li><a href="/privacy/">Privacy Policy</a></li>
+
+			
+
+				<li><a href="/terms/">Terms of Service</a></li>
+
+			
+
+				<li><a href="/shop/">Shop</a></li>
+
+			
+
+				<li><a href="/news/">News</a></li>
+
+			
+
+				<li><a href="/events/">Events</a></li>
+
+			
+
+		</ul>
+
+	</div>
+	
+</nav>
+<!-- ===== /Main Navigation ===== -->
+
+	<!-- ===== Search Form ===== -->
+<div id="search-form" class="search-form hidden" data-toggle-target aria-hidden="true">
+	<form class="flex items-stretch w-full rounded-full bg-blaga-100 h-10" action="#">
+		<input class="w-full h-full block px-6 py-2 focus:outline-none rounded-l-full" type="search" placeholder="Search...">
+		<button
+			class="search-submit bg-primary text-white hover:bg-primary active:bg-blawu shrink-0"
+			type="submit"
+			aria-label="Search"
+		>
+			<span class="search-icon" aria-hidden="true"></span>
+		</button>
+	</form>
+</div>
+<!-- ===== /Search Form ===== -->
+
+
+	<div class="ml-auto z-20">
+		<button
+			class="search-toggle bg-blaga-100 text-blaga-800 hover:bg-primary active:bg-blawu hover:text-white toggle-button"
+			data-target="search-form"
+			type="button"
+			aria-label="Toggle search form"
+			aria-controls="search-form"
+			aria-expanded="false"
+		>
+			<span class="search-icon" aria-hidden="true"></span>
+		</button>
+	</div>
+
+  </div>
+
+</header>
+<!-- ===== /Site Header Default ===== -->
+
+		<main id="content">
+			
+<!-- ===== Hero Section ===== -->
+<section class="hero bg-blaga-100/50">
+  <div class="inner">
+
+	  <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-blue-600">
+		HTML template starter
+	  </p>
+	  <h1 class="section-title text-4xl font-bold leading-tight lg:text-5xl text-blue-700/80">
+		Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.
+	  </h1>
+	  <p class="section-subtitle mt-3 text-xl leading-relaxed text-blue-600 lg:text-2xl">
+		This is the new Pehtheme static HTML template running on your site.
+	  </p>
+
+  </div>
+</section>
+<!-- ===== /Hero Section ===== -->
+
+<!-- ===== Main ===== -->
+ <main>
+
+	<div class="wrapper">
+
+		<!-- ===== Carousel Card ===== -->
+<section class="feature-content py-6 md:py-10 lg:py-12">
+
+	<div class="section-heading flex items-center justify-between mb-6">
+		<h2 class="section-title text-2xl font-bold leading-tight lg:text-3xl">
+			Carousel Card
+		</h2>
+
+		<button class="btn px-4 py-1 md:px-6 md:py-2 border-blaga-500/50 text-white bg-primary hover:bg-blawu active:bg-primary">
+			View All
+		</button>
+	</div>
+
+	<div class="carousel snap-x snap-mandatory overflow-x-auto border-b border-blaga-500/30 scrollbar-thin scrollbar-thumb-primary">
+		
+		<div class="flex space-x-6 pb-6 md:pb-10 lg:pb-12">
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: A complete guide on how to easily build static websites using the Hugo framework for beginners"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/101/720/420"
+						alt="A complete guide on how to easily build static websites using the Hugo framework for beginners"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-01-12T08:30:00+07:00">
+						Jan 12, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						A complete guide on how to easily build static websites using the Hugo framework for beginners
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Learn the basic steps to set up your own website development environment using Hugo efficiently, quickly, and in a way that is very friendly for web developers today.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: An in-depth analysis regarding the significant performance differences between Hugo compared to the popular WordPress platform"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/69/720/420"
+						alt="An in-depth analysis regarding the significant performance differences between Hugo compared to the popular WordPress platform"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-02-20T14:15:22+07:00">
+						Feb 20, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						An in-depth analysis regarding the significant performance differences between Hugo compared to the popular WordPress platform
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						In this article, we will discuss the technical comparison between access speed and configuration flexibility offered by Hugo when compared to the WordPress CMS.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: Tips and tricks for optimizing images on your website so that loading performance becomes much faster"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/696/720/420"
+						alt="Tips and tricks for optimizing images on your website so that loading performance becomes much faster"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-03-05T09:45:10+07:00">
+						Mar 05, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						Tips and tricks for optimizing images on your website so that loading performance becomes much faster
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Using properly optimized images will greatly help improve your website&#39;s performance score on search engines and provide a much more satisfying user experience overall.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: How to deploy static websites to free hosting providers like Netlify or Vercel in an easy way"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/450/720/420"
+						alt="How to deploy static websites to free hosting providers like Netlify or Vercel in an easy way"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-04-18T16:20:00+07:00">
+						Apr 18, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						How to deploy static websites to free hosting providers like Netlify or Vercel in an easy way
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Deploying your website is now easier with automatic integration between your code repository and modern hosting services that fully support the Git workflow directly.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: Understanding modern web programming concepts to build responsive user interfaces that are very interesting to look at"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/522/720/420"
+						alt="Understanding modern web programming concepts to build responsive user interfaces that are very interesting to look at"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-05-22T11:10:45+07:00">
+						May 22, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						Understanding modern web programming concepts to build responsive user interfaces that are very interesting to look at
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Grasping the fundamentals of HTML, CSS, and JavaScript is the key to creating a modern, responsive, and consistent user interface experience across all devices today.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: The importance of static website security and basic mitigation steps that must be taken by every owner"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/680/720/420"
+						alt="The importance of static website security and basic mitigation steps that must be taken by every owner"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-06-10T10:05:30+07:00">
+						Jun 10, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						The importance of static website security and basic mitigation steps that must be taken by every owner
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Although static websites tend to be safer, there are still several important security procedures that must be implemented to protect your site data from any attacks.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: Improving SEO-friendly content writing techniques so that your website is easily found by new potential visitors"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/790/720/420"
+						alt="Improving SEO-friendly content writing techniques so that your website is easily found by new potential visitors"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-07-01T15:30:15+07:00">
+						Jul 01, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						Improving SEO-friendly content writing techniques so that your website is easily found by new potential visitors
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Search engine optimization is not just about technical aspects, but also about how you present content that is relevant, informative, and well-structured for readers.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: Why transitioning from traditional content management systems to static site generators is the best choice right now"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/830/720/420"
+						alt="Why transitioning from traditional content management systems to static site generators is the best choice right now"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-07-05T12:00:00+07:00">
+						Jul 05, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						Why transitioning from traditional content management systems to static site generators is the best choice right now
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						Many developers are switching to static site generators because they offer high-level security, incredible access speeds, and very minimal operational costs for sites.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+			<article class="card post-card card-basis-33 shrink-0 group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+				<a
+					class="card-link absolute inset-0 z-10"
+					href="/single/"
+					aria-label="Read article: Exploration of the latest web technology trends that will dominate the software development industry in the future"
+				></a>
+
+				<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+					<img
+						class="object-cover transition duration-500 group-hover:scale-105"
+						src="https://picsum.photos/id/950/720/420"
+						alt="Exploration of the latest web technology trends that will dominate the software development industry in the future"
+					>
+				</figure>
+
+				<div class="card-content p-5 md:p-6">
+
+					<time class="card-date text-sm text-primary" datetime="2024-07-06T09:00:00+07:00">
+						Jul 06, 2024
+					</time>
+
+					<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+						Exploration of the latest web technology trends that will dominate the software development industry in the future
+					</h3>
+
+					<p class="card-excerpt line-clamp-2">
+						The web development industry continues to move dynamically with the emergence of various new tools and frameworks aimed at improving productivity for all developers.
+					</p>
+
+				</div>
+			</article>
+
+		
+
+		</div>
+
+	</div>
+
+</section>
+<!-- ===== /Carousel Card ===== -->
+
+		<!-- ===== Content ===== -->
+		<div class="pb-6 md:pb-10 lg:pb-12 border-b border-blaga-500/30">
+
+			<div class="section-heading flex items-center justify-between mb-6">
+				<h2 class="section-title text-xl font-bold leading-tight lg:text-3xl">
+					Latest Post
+				</h2>
+
+				<button class="btn px-4 py-1 md:px-6 md:py-2 border-blaga-500/50 text-white bg-primary hover:bg-blawu active:bg-primary">
+					View All
+				</button>
+			</div>
+
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Using engineering techniques applications scalable enhance user in development building"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/938/720/420"
+			alt="Using engineering techniques applications scalable enhance user in development building"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2026-05-27T00:00:00+07:00">
+			May 27, 2026
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Using engineering techniques applications scalable enhance user in development building
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Static site generators are changing the landscape of web development. We dive deep into why developers prefer these tools for building secure and fast websites today.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: User hugo the cutting digital for with exploring current enhance era techniques significantly that scalable"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/859/720/420"
+			alt="User hugo the cutting digital for with exploring current enhance era techniques significantly that scalable"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-01-02T00:00:00+07:00">
+			Jan 02, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			User hugo the cutting digital for with exploring current enhance era techniques significantly that scalable
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Static site generators are changing the landscape of web development. We dive deep into why developers prefer these tools for building secure and fast websites today.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Techniques for user applications using robust web current solutions frontend"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/518/720/420"
+			alt="Techniques for user applications using robust web current solutions frontend"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2024-03-03T00:00:00+07:00">
+			Mar 03, 2024
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Techniques for user applications using robust web current solutions frontend
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Accessibility matters. Build inclusive websites that cater to all users regardless of their abilities, following global standards and best practices for web content.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Era cutting modern experience with today digital significantly solutions best using scalable the"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/347/720/420"
+			alt="Era cutting modern experience with today digital significantly solutions best using scalable the"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-04-13T00:00:00+07:00">
+			Apr 13, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Era cutting modern experience with today digital significantly solutions best using scalable the
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			A developer&#39;s journey is continuous learning. We share insights on how to stay productive, manage your projects, and balance your technical and creative goals daily.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Strategies modern in hugo edge frontend enhance best experience era exploring user tools"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/397/720/420"
+			alt="Strategies modern in hugo edge frontend enhance best experience era exploring user tools"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-02-09T00:00:00+07:00">
+			Feb 09, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Strategies modern in hugo edge frontend enhance best experience era exploring user tools
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Security is paramount in web development. Understand the critical steps to protect your static site from common vulnerabilities and threats in the digital environment.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Era scalable today user development engineering solutions modern edge experience with hugo in using best"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/826/720/420"
+			alt="Era scalable today user development engineering solutions modern edge experience with hugo in using best"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-11-13T00:00:00+07:00">
+			Nov 13, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Era scalable today user development engineering solutions modern edge experience with hugo in using best
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Accessibility matters. Build inclusive websites that cater to all users regardless of their abilities, following global standards and best practices for web content.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Exploring engineering using and user for with web frontend cutting"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/562/720/420"
+			alt="Exploring engineering using and user for with web frontend cutting"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2026-05-16T00:00:00+07:00">
+			May 16, 2026
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Exploring engineering using and user for with web frontend cutting
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Security is paramount in web development. Understand the critical steps to protect your static site from common vulnerabilities and threats in the digital environment.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: And using modern edge building web hugo user for applications engineering today"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/670/720/420"
+			alt="And using modern edge building web hugo user for applications engineering today"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2024-08-19T00:00:00+07:00">
+			Aug 19, 2024
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			And using modern edge building web hugo user for applications engineering today
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Automation in deployment workflows saves time and reduces errors. Learn how to set up continuous integration pipelines for your projects using free cloud services.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Scalable framework frontend in today building the and exploring for with cutting era"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/928/720/420"
+			alt="Scalable framework frontend in today building the and exploring for with cutting era"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-06-28T00:00:00+07:00">
+			Jun 28, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Scalable framework frontend in today building the and exploring for with cutting era
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			The future of web development is here. Stay updated with the latest trends, frameworks, and programming paradigms that are shaping the industry for years to come.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Development scalable solutions current significantly framework enhance tools modern today era practices using"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/570/720/420"
+			alt="Development scalable solutions current significantly framework enhance tools modern today era practices using"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-01-12T00:00:00+07:00">
+			Jan 12, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Development scalable solutions current significantly framework enhance tools modern today era practices using
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			A developer&#39;s journey is continuous learning. We share insights on how to stay productive, manage your projects, and balance your technical and creative goals daily.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: In digital web edge and engineering strategies applications using that"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/776/720/420"
+			alt="In digital web edge and engineering strategies applications using that"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-05-06T00:00:00+07:00">
+			May 06, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			In digital web edge and engineering strategies applications using that
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Static site generators are changing the landscape of web development. We dive deep into why developers prefer these tools for building secure and fast websites today.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Digital engineering frontend with best that tools using user robust"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/580/720/420"
+			alt="Digital engineering frontend with best that tools using user robust"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-09-12T00:00:00+07:00">
+			Sep 12, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Digital engineering frontend with best that tools using user robust
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Discover the essential strategies for mastering web development workflows in this modern age, focusing on performance, scalability, and clean code architecture principles.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Best experience modern framework engineering significantly tools current digital user practices"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/183/720/420"
+			alt="Best experience modern framework engineering significantly tools current digital user practices"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2026-06-18T00:00:00+07:00">
+			Jun 18, 2026
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Best experience modern framework engineering significantly tools current digital user practices
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			A developer&#39;s journey is continuous learning. We share insights on how to stay productive, manage your projects, and balance your technical and creative goals daily.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Edge practices web strategies building the robust applications hugo in for and"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/799/720/420"
+			alt="Edge practices web strategies building the robust applications hugo in for and"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2024-10-02T00:00:00+07:00">
+			Oct 02, 2024
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Edge practices web strategies building the robust applications hugo in for and
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Static site generators are changing the landscape of web development. We dive deep into why developers prefer these tools for building secure and fast websites today.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Framework in solutions edge building the experience for engineering tools robust enhance for development techniques hugo"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/165/720/420"
+			alt="Framework in solutions edge building the experience for engineering tools robust enhance for development techniques hugo"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2024-02-01T00:00:00+07:00">
+			Feb 01, 2024
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Framework in solutions edge building the experience for engineering tools robust enhance for development techniques hugo
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Discover the essential strategies for mastering web development workflows in this modern age, focusing on performance, scalability, and clean code architecture principles.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Practices current tools significantly building for era hugo enhance cutting in"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/695/720/420"
+			alt="Practices current tools significantly building for era hugo enhance cutting in"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2024-01-19T00:00:00+07:00">
+			Jan 19, 2024
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Practices current tools significantly building for era hugo enhance cutting in
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Responsive design is no longer an option but a necessity. Explore how modern CSS frameworks help you create stunning layouts that look great on any screen size.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Practices for for hugo in era that today using best cutting development"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/879/720/420"
+			alt="Practices for for hugo in era that today using best cutting development"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2026-03-13T00:00:00+07:00">
+			Mar 13, 2026
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Practices for for hugo in era that today using best cutting development
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			The future of web development is here. Stay updated with the latest trends, frameworks, and programming paradigms that are shaping the industry for years to come.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Era for experience edge in development building using modern exploring user frontend with"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/410/720/420"
+			alt="Era for experience edge in development building using modern exploring user frontend with"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-05-19T00:00:00+07:00">
+			May 19, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Era for experience edge in development building using modern exploring user frontend with
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			SEO is crucial for your content visibility. Follow these expert tips to structure your metadata and content for better ranking on major search engine platforms today.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: With experience for the current tools framework frontend scalable development best techniques that today solutions"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/506/720/420"
+			alt="With experience for the current tools framework frontend scalable development best techniques that today solutions"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2024-11-21T00:00:00+07:00">
+			Nov 21, 2024
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			With experience for the current tools framework frontend scalable development best techniques that today solutions
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			Automation in deployment workflows saves time and reduces errors. Learn how to set up continuous integration pipelines for your projects using free cloud services.
+		</p>
+
+	</div>
+</article>
+
+				
+
+					<article class="card post-card group relative rounded-3xl bg-blaga-100/50 hover:bg-primary/25">
+	<a
+		class="card-link absolute inset-0 z-10"
+		href="/single/"
+		aria-label="Read article: Tools cutting engineering frontend building solutions digital web framework development applications edge experience hugo"
+	></a>
+
+	<figure class="card-image w-full md:aspect-video overflow-hidden rounded-3xl">
+		<img
+			class="object-cover transition duration-500 group-hover:scale-105"
+			src="https://picsum.photos/id/460/720/420"
+			alt="Tools cutting engineering frontend building solutions digital web framework development applications edge experience hugo"
+		>
+	</figure>
+
+	<div class="card-content p-5 md:p-6">
+
+		<time class="card-date text-sm text-primary" datetime="2025-02-25T00:00:00+07:00">
+			Feb 25, 2025
+		</time>
+
+		<h3 class="card-title my-2 md:my-3 text-xl md:text-2xl font-bold leading-tight line-clamp-3 group-hover:text-primary">
+			Tools cutting engineering frontend building solutions digital web framework development applications edge experience hugo
+		</h3>
+
+		<p class="card-excerpt line-clamp-2">
+			SEO is crucial for your content visibility. Follow these expert tips to structure your metadata and content for better ranking on major search engine platforms today.
+		</p>
+
+	</div>
+</article>
+
+				
+
+			</div>
+		</div>
+		<!-- ===== /Content ===== -->
+
+	</div>
+ </main>
+<!-- ===== /Main ===== -->
+
+<!-- ===== /CTA ===== -->
+<section class="cta py-6 md:py-10 lg:py-12">
+	<div class="inner">
+		<div class="rounded-3xl bg-blue-700 p-6 lg:p-8">
+			<div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+				
+				<div class="section-heading w-full md:w-3/5 text-white">
+					<h2 class="section-title text-3xl font-bold leading-tight lg:text-4xl">
+						Stay In The Loop! Subscribe to Our Newsletter.
+					</h2>
+					<p class="section-subtitle mt-3 text-base leading-relaxed text-blue-100 lg:text-lg">
+						Join our community of enthusiasts and stay informed. Just enter your email below, and we'll make sure you're always in the know!
+					</p>
+				</div>
+
+				<div class="w-full md:w-2/5">
+					<form action="#" class="flex flex-col gap-4 sm:flex-row">
+						<input
+							class="w-full rounded-full bg-white px-6 py-3 text-gray-900 placeholder:text-gray-500 focus:outline-none"
+							type="email"
+							placeholder="Email..."
+						>
+						<button
+							type="submit"
+							class="btn shrink-0 bg-white px-6 py-3 text-primary hover:bg-primary hover:text-white sm:w-auto"
+						>
+							Subscribe
+						</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ===== /CTA ===== -->
+
+		</main>
+
+		<!-- ===== Footer ===== -->
+<footer class="site-footer bg-blaga-100/50">
+  <div class="inner">
+	<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_320px]">
+	  <div>
+		<h2 class="text-lg font-semibold text-slate-900">Pehtheme</h2>
+		<p class="mt-3 max-w-xl text-sm leading-7 text-red-600">
+		Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.
+		</p>
+	  </div>
+
+	  <div class="space-y-2 text-sm text-slate-600">
+		<p><strong class="text-slate-900">Email:</strong> hello@example.com</p>
+		<p><strong class="text-slate-900">Phone:</strong> +62 812 3456 7890</p>
+		<p><strong class="text-slate-900">Location:</strong> Banda Aceh, Indonesia</p>
+	  </div>
+	</div>
+
+	<div class="mt-8 border-t border-slate-200 pt-6 text-sm text-slate-500">
+	  <p>&copy; 2026 Pehtheme. Built with Eleventy, Nunjucks, and Tailwind CSS.</p>
+	</div>
+  </div>
+</footer>
+<!-- ===== /Footer ===== -->
+
+	</div>
+
+	<script type="module" src="/assets/js/app-module.js"></script>
+
+	
+		<script type="module" src="/assets/js/home-module.js"></script>
+	
+
+</body>
+</html>

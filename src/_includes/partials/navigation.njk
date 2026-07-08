@@ -1,0 +1,27 @@
+<!-- ===== Main Navigation ===== -->
+<nav id="main-navigation" class="navigation hidden" data-toggle-target aria-hidden="true">
+
+	<div class="rounded-full bg-blaga-100 flex items-center overflow-x-auto scrollbar-thin h-10">
+
+		<div class="absolute flex items-center justify-center h-10 w-10 rounded-full bg-blaga-100 group">
+			<span class="bg-primary text-white rounded-full p-1.5">
+				<svg class="group-hover:animate-spin" width="22" height="22" aria-hidden="true">
+					<use href="/assets/icons/sprite.svg#egg-fried"></use>
+				</svg>
+			</span>
+		</div>
+
+		<ul class="flex items-center justify-center space-x-5 whitespace-nowrap px-15">
+
+			{% for item in menu.primary %}
+
+				<li><a href="{{ item.url }}">{{ item.label }}</a></li>
+
+			{% endfor %}
+
+		</ul>
+
+	</div>
+	
+</nav>
+<!-- ===== /Main Navigation ===== -->

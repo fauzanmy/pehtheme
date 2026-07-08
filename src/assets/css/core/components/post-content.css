@@ -1,0 +1,12 @@
+@layer components {
+	.entry-content {
+		@apply prose prose-neutral max-w-none;
+	}
+	.entry-content h2,
+	.entry-content h3 {
+		@apply font-bold text-gray-900;
+	}
+	.entry-content blockquote {
+		@apply border-l-4 border-gray-300 pl-4 italic text-gray-600;
+	}
+}

@@ -1,0 +1,39 @@
+/**
+ * Critical CSS
+ *
+ * Entry point for above-the-fold styles loaded inline in the document head.
+ *
+ * Used by:
+ * - All Pages (Global)
+ *
+ * Dependents:
+ * - listing.css
+ * - single.css
+ *
+ * Include Order:
+ * 1. Base / Reset (html, body)
+ * 2. Layouts (container, site header)
+ * 3. Components (primary navigation)
+ * 4. Templates (hero section)
+ *
+ * @package UIAceh
+ * @since 1.5.2
+ */
+
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/preflight" layer(base);
+
+@source "../../*.njk";
+@source "../../_includes/**/*.njk";
+
+/* Fonts, Colors & CSS Variables*/
+@import "./core/theme.css";
+@import "./core/base.css";
+@import "./core/layout.css";
+
+/* Components */
+@import "./core/components/header.css";
+@import "./core/components/search";
+@import "./core/components/navigation.css";
+@import "./core/components/hero.css";
+@import "./core/components/heading.css";

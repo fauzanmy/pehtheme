@@ -1,0 +1,26 @@
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@theme {
+	/* Override font default ke Roboto */
+	--font-sans: 'Roboto', sans-serif;
+
+	/* Warna Brand */
+	--color-primary: oklch(0.6231 0.188 259.81) /* #3b82f6 blue */;
+	--color-secondary: oklch(79.81% 0.1045 87.09);
+	--color-blawu: oklch(0.4882 0.2172 264.38);
+
+	/* Palette blaga */
+	--color-blaga-50: oklch(98.46% 0.0017 247.84);
+	--color-blaga-100: oklch(91% 0.0013 286.37);
+	--color-blaga-200: oklch(83.31% 0.0014 286.37);
+	--color-blaga-300: oklch(75.51% 0.0018 325.59);
+	--color-blaga-400: oklch(67.43% 0.0019 325.6);
+	--color-blaga-500: oklch(58.93% 0.0039 354.78);
+	--color-blaga-600: oklch(50.28% 0.0041 354.82);
+	--color-blaga-700: oklch(41.33% 0.0056 0.24);
+	--color-blaga-800: oklch(31.77% 0.006 0.39);
+	--color-blaga-900: oklch(21.54% 0.0082 4.19);
+	--color-blaga-950: oklch(19.09% 0.0087 264.35);
+}

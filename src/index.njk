@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: Home
+permalink: /index.html
+pageCss: page
+pageScript: home-module
+---
+
+{% include "partials/hero.njk" %}
+
+<!-- ===== Main ===== -->
+ <main>
+
+	<div class="wrapper">
+
+		{% include "partials/carousel.njk" %}
+
+		<!-- ===== Content ===== -->
+		<div class="pb-6 md:pb-10 lg:pb-12 border-b border-blaga-500/30">
+
+			<div class="section-heading flex items-center justify-between mb-6">
+				<h2 class="section-title text-xl font-bold leading-tight lg:text-3xl">
+					Latest Post
+				</h2>
+
+				<button class="btn px-4 py-1 md:px-6 md:py-2 border-blaga-500/50 text-white bg-primary hover:bg-blawu active:bg-primary">
+					View All
+				</button>
+			</div>
+
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+				{% for post in posts %}
+
+					{% include "partials/card.njk" %}
+
+				{% endfor %}
+
+			</div>
+		</div>
+		<!-- ===== /Content ===== -->
+
+	</div>
+ </main>
+<!-- ===== /Main ===== -->
+
+{% include "partials/cta.njk" %}

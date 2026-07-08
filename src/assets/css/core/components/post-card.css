@@ -1,0 +1,17 @@
+/**
+ * Component: Post Card
+ * Card styles for article previews and post listing items.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	.post-card {
+		@apply flex flex-col gap-3 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow;
+	}
+	.post-card .post-thumbnail img {
+		@apply w-full aspect-video object-cover;
+	}
+	.post-card .entry-summary {
+		@apply text-sm text-gray-600 line-clamp-3;
+	}
+}

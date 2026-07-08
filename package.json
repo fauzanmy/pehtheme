@@ -1,18 +1,51 @@
 {
-  "name": "pehtheme",
-  "version": "1.0.0",
-  "description": "Pehtheme mobile-first HTML template for blog, news build with [Basscss](https://basscss.com/) lightning fast modular CSS with no side effects.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./main.css -o ./assets/css/tailwind.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5"
-  }
+	"name": "pehtheme",
+	"version": "2.0.0-dev",
+	"private": true,
+	"description": "Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.",
+	"type": "module",
+	"packageManager": "pnpm@11.8.0",
+	"scripts": {
+		
+		"dev:11ty": "eleventy --serve",
+
+		"dev:tailwind:critical": "tailwindcss -i ./src/assets/css/critical.css -o ./dist/assets/css/critical.css --watch",
+		"dev:tailwind:page": "tailwindcss -i ./src/assets/css/page.css -o ./dist/assets/css/page.css --watch",
+		"dev:tailwind:single": "tailwindcss -i ./src/assets/css/single.css -o ./dist/assets/css/single.css --watch",
+		"dev:tailwind": "concurrently -n critical,page,single -c cyan,magenta,blue \"pnpm dev:tailwind:critical\" \"pnpm dev:tailwind:page\" \"pnpm dev:tailwind:single\"",
+
+		"watch:js:module": "esbuild ./src/assets/js/app-module.js ./src/assets/js/home-module.js --bundle --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js --watch",
+		"watch:js:bundle": "esbuild ./src/assets/js/app-bundle.js ./src/assets/js/home-bundle.js --bundle --minify --outdir=./dist/assets/js --watch",
+		"watch:js": "concurrently -n module,bundle -c green,yellow \"pnpm watch:js:module\" \"pnpm watch:js:bundle\"",
+
+		"dev": "concurrently -n eleventy,tailwind -c yellow,cyan \"pnpm dev:11ty\" \"pnpm dev:tailwind\"",
+		"devjs": "concurrently -n eleventy,tailwind,js -c yellow,cyan,magenta \"pnpm dev:11ty\" \"pnpm dev:tailwind\" \"pnpm watch:js\"",
+
+		"build:11ty": "eleventy",
+
+		"build:tailwind:critical": "tailwindcss -i ./src/assets/css/critical.css -o ./dist/assets/css/critical.css --minify",
+		"build:tailwind:page": "tailwindcss -i ./src/assets/css/page.css -o ./dist/assets/css/page.css --minify",
+		"build:tailwind:single": "tailwindcss -i ./src/assets/css/single.css -o ./dist/assets/css/single.css --minify",
+		"build:tailwind": "pnpm build:tailwind:critical && pnpm build:tailwind:page && pnpm build:tailwind:single",
+
+		"build:js:module": "esbuild ./src/assets/js/app-module.js ./src/assets/js/home-module.js --bundle --minify --format=esm --splitting --chunk-names=chunks/[name]-[hash] --outdir=./dist/assets/js",
+		"build:js:bundle": "esbuild ./src/assets/js/app-bundle.js ./src/assets/js/home-bundle.js --bundle --minify --outdir=./dist/assets/js",
+		"build:js": "pnpm build:js:module && pnpm build:js:bundle",
+
+		"build": "pnpm build:11ty && pnpm build:tailwind && pnpm build:js",
+
+		"build:icons": "node src/assets/js/build-icons.js src/assets/icons dist/assets/icons/sprite.svg",
+		
+		"format": "prettier . --write"
+	},
+
+	"devDependencies": {
+		"@11ty/eleventy": "^3.1.6",
+		"@tailwindcss/cli": "^4.3.2",
+		"concurrently": "^10.0.3",
+		"esbuild": "^0.28.1",
+		"prettier": "^3.9.4",
+		"prettier-plugin-tailwindcss": "^0.8.0",
+		"tailwindcss": "^4.3.2"
+	}
 }

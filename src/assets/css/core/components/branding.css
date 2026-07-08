@@ -1,0 +1,17 @@
+/**
+ * Component: Branding
+ * Site branding styles for logo, title, and tagline.
+ * Pehtheme HTML
+ */
+ 
+@layer components {
+	.site-branding {
+		@apply flex items-center gap-3;
+	}
+	.site-title {
+		@apply text-xl font-bold text-gray-900;
+	}
+	.site-description {
+		@apply text-sm text-gray-500;
+	}
+}

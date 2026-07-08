@@ -1,0 +1,17 @@
+/**
+ * Component: Pagination
+ * Pagination styles for archive, listing, and article navigation.
+ * Pehtheme HTML
+ */
+
+@layer components {
+	.nav-links {
+		@apply flex items-center justify-center gap-2 mt-10;
+	}
+	.nav-links .page-numbers {
+		@apply px-3 py-1.5 rounded-md text-sm text-gray-700 hover:bg-gray-100;
+	}
+	.nav-links .current {
+		@apply bg-gray-900 text-white;
+	}
+}
