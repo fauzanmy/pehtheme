@@ -11,76 +11,84 @@
 		"url": "/about/"
 		},
 		{
+		"label": "Blog Post",
+		"url": "/blog-posts/"
+		},
+		{
+		"label": "Article",
+		"url": "/single/"
+		},
+		{
 		"label": "Services",
 		"url": "/services/"
-		},
-		{
-		"label": "Portfolio",
-		"url": "/portfolio/"
-		},
-		{
-		"label": "Blog",
-		"url": "/blog/"
 		},
 		{
 		"label": "Contact",
 		"url": "/contact/"
 		},
 		{
+		"label": "Page",
+		"url": "/page/"
+		},
+		{
+		"label": "Portfolio",
+		"url": "/#"
+		},
+		{
 		"label": "Projects",
-		"url": "/projects/"
+		"url": "/#"
 		},
 		{
 		"label": "Documentation",
-		"url": "/docs/"
+		"url": "/#"
 		},
 		{
 		"label": "Careers",
-		"url": "/careers/"
+		"url": "/#"
 		},
 		{
 		"label": "Pricing",
-		"url": "/pricing/"
+		"url": "/#"
 		},
 		{
 		"label": "Support",
-		"url": "/support/"
+		"url": "/#"
 		},
 		{
 		"label": "Features",
-		"url": "/features/"
+		"url": "/#"
 		},
 		{
 		"label": "Team",
-		"url": "/team/"
+		"url": "/#"
 		},
 		{
 		"label": "Testimonials",
-		"url": "/testimonials/"
+		"url": "/#"
 		},
 		{
 		"label": "FAQ",
-		"url": "/faq/"
+		"url": "/#"
 		},
 		{
 		"label": "Privacy Policy",
-		"url": "/privacy/"
+		"url": "/#"
 		},
 		{
 		"label": "Terms of Service",
-		"url": "/terms/"
+		"url": "/#"
 		},
 		{
 		"label": "Shop",
-		"url": "/shop/"
+		"url": "/#"
 		},
 		{
 		"label": "News",
-		"url": "/news/"
+		"url": "/#"
 		},
 		{
 		"label": "Events",
-		"url": "/events/"
+		"url": "/#"
 		}
 	],
 
