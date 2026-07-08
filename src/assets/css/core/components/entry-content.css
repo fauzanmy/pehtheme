@@ -1,3 +1,16 @@
+/**
+ * Component: Entry Content
+ * Typography entry content styles for articles, page and blog
+ * Pehtheme HTML
+ */
+
 .entry-content {
-	@apply space-y-4
+	@apply text-wrap space-y-4
+}
+
+.entry-content pre {
+	@apply
+		overflow-x-auto
+		/*whitespace-pre-wrap*/
+		;
 }
