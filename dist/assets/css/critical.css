@@ -16,10 +16,8 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-primary: oklch(0.6231 0.188 259.81) /* #3b82f6 blue */;
     --color-blawu: oklch(0.4882 0.2172 264.38);
     --color-blaga-500: oklch(58.93% 0.0039 354.78);
-    --color-blaga-800: oklch(31.77% 0.006 0.39);
   }
 }
 @layer base {
@@ -261,7 +259,7 @@
     font-weight: var(--font-weight-bold);
   }
 }
-.search-toggle {
+.search-toggle, .search-submit {
   display: flex;
   width: calc(var(--spacing) * 10);
   height: calc(var(--spacing) * 10);
@@ -269,23 +267,9 @@
   align-items: center;
   justify-content: center;
   border-radius: calc(infinity * 1px);
-  color: var(--color-blaga-800);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
-  &:hover {
-    @media (hover: hover) {
-      background-color: var(--color-primary);
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      color: var(--color-white);
-    }
-  }
-  &:active {
-    background-color: var(--color-blawu);
-  }
 }
 .search-icon {
   position: relative;
@@ -319,7 +303,43 @@
   border-width: 2px;
   border-color: currentcolor;
 }
-@layer components;
+.search-form {
+  position: absolute;
+  right: calc(var(--spacing) * 4);
+  z-index: 40;
+  width: calc(100% - 2rem);
+  @media (width >= 48rem) {
+    right: calc(var(--spacing) * 6);
+  }
+  @media (width >= 48rem) {
+    width: calc(69% - 2rem);
+  }
+  @media (width >= 64rem) {
+    right: calc(var(--spacing) * 8);
+  }
+  @media (width >= 64rem) {
+    width: calc(59% - 2rem);
+  }
+}
+@layer components {
+  .navigation {
+    position: absolute;
+    right: calc(var(--spacing) * 4);
+    left: calc(var(--spacing) * 4);
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 6);
+    }
+    @media (width >= 48rem) {
+      left: calc(var(--spacing) * 6);
+    }
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 8);
+    }
+    @media (width >= 64rem) {
+      left: calc(var(--spacing) * 8);
+    }
+  }
+}
 .hero {
   padding-block: calc(var(--spacing) * 8);
   @media (width >= 48rem) {

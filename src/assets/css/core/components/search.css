@@ -1,11 +1,8 @@
-.search-toggle {
+.search-toggle, 
+.search-submit {
 	@apply
 		flex size-10 cursor-pointer items-center justify-center
-		rounded-full
-		text-blaga-800
-		transition-colors
-		hover:bg-primary active:bg-blawu
-		hover:text-white
+		rounded-full transition-colors
 	;
 }
 
@@ -26,5 +23,12 @@
 	@apply
 		absolute right-[2.5px] -bottom-[1px] block h-[10px]
 		rotate-[-45deg] rounded-full border-2 border-current
+	;
+}
+
+.search-form {
+	@apply
+		absolute w-[calc(100%-2rem)] md:w-[calc(69%-2rem)] lg:w-[calc(59%-2rem)]
+		right-4 md:right-6 lg:right-8 z-40
 	;
 }

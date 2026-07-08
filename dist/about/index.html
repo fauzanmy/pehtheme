@@ -35,13 +35,13 @@
 	<div class="site-branding flex items-center justify-center space-x-2 pr-4">
 
 		<button class="flex items-center justify-center space-x-2 px-4 h-10 pl-3 pr-1 bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 rounded-full group cursor-pointer toggle-button" data-target="main-navigation">
-			<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+			<svg class="size-6" aria-hidden="true">
+				<use href="/assets/icons/sprite.svg#list"></use>
 			</svg>
-			<span class="bg-blawu fill-gray-600 rounded-full p-2">
-				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="group-hover:animate-spin egg-fried fill-white" viewBox="0 0 16 16">
-					<path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-					<path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"></path>
+
+			<span class="bg-primary text-white rounded-full p-2">
+				<svg class="group-hover:animate-spin" width="18" height="18" aria-hidden="true">
+					<use href="/assets/icons/sprite.svg#egg-fried"></use>
 				</svg>
 			</span>
 		</button>
@@ -56,67 +56,130 @@
 
 	</div>
 
-	<nav id="main-navigation" class="navigation absolute left-4 md:left-6 lg:left-8 right-4 md:right-6 lg:right-8 hidden" data-toggle-target aria-hidden="true">
 
-		<div class="rounded-full bg-blaga-100 flex items-center overflow-x-auto scrollbar-thin h-10">
+	<!-- ===== Main Navigation ===== -->
+<nav id="main-navigation" class="navigation hidden" data-toggle-target aria-hidden="true">
 
-			<div class="absolute flex items-center justify-center h-10 w-12 bg-primary rounded-full">
-				X
-			</div>
+	<div class="rounded-full bg-blaga-100 flex items-center overflow-x-auto scrollbar-thin h-10">
 
-			<ul class="flex items-center justify-center space-x-4 whitespace-nowrap px-16">
-
-				
-					<li><a href="/">Home</a></li>
-				
-					<li><a href="/about/">About</a></li>
-				
-					<li><a href="/services/">Services</a></li>
-				
-					<li><a href="/portfolio/">Portfolio</a></li>
-				
-					<li><a href="/blog/">Blog</a></li>
-				
-					<li><a href="/contact/">Contact</a></li>
-				
-					<li><a href="/projects/">Projects</a></li>
-				
-					<li><a href="/docs/">Documentation</a></li>
-				
-					<li><a href="/careers/">Careers</a></li>
-				
-					<li><a href="/pricing/">Pricing</a></li>
-				
-					<li><a href="/support/">Support</a></li>
-				
-					<li><a href="/features/">Features</a></li>
-				
-					<li><a href="/team/">Team</a></li>
-				
-					<li><a href="/testimonials/">Testimonials</a></li>
-				
-					<li><a href="/faq/">FAQ</a></li>
-				
-					<li><a href="/privacy/">Privacy Policy</a></li>
-				
-					<li><a href="/terms/">Terms of Service</a></li>
-				
-					<li><a href="/shop/">Shop</a></li>
-				
-					<li><a href="/news/">News</a></li>
-				
-					<li><a href="/events/">Events</a></li>
-				
-
-			</ul>
-
+		<div class="absolute flex items-center justify-center h-10 w-10 rounded-full bg-blaga-100 group">
+			<span class="bg-primary text-white rounded-full p-1.5">
+				<svg class="group-hover:animate-spin" width="22" height="22" aria-hidden="true">
+					<use href="/assets/icons/sprite.svg#egg-fried"></use>
+				</svg>
+			</span>
 		</div>
-		
-	</nav>
 
-	<div class="ml-auto z-40">
+		<ul class="flex items-center justify-center space-x-5 whitespace-nowrap px-15">
+
+			
+
+				<li><a href="/">Home</a></li>
+
+			
+
+				<li><a href="/about/">About</a></li>
+
+			
+
+				<li><a href="/services/">Services</a></li>
+
+			
+
+				<li><a href="/portfolio/">Portfolio</a></li>
+
+			
+
+				<li><a href="/blog/">Blog</a></li>
+
+			
+
+				<li><a href="/contact/">Contact</a></li>
+
+			
+
+				<li><a href="/projects/">Projects</a></li>
+
+			
+
+				<li><a href="/docs/">Documentation</a></li>
+
+			
+
+				<li><a href="/careers/">Careers</a></li>
+
+			
+
+				<li><a href="/pricing/">Pricing</a></li>
+
+			
+
+				<li><a href="/support/">Support</a></li>
+
+			
+
+				<li><a href="/features/">Features</a></li>
+
+			
+
+				<li><a href="/team/">Team</a></li>
+
+			
+
+				<li><a href="/testimonials/">Testimonials</a></li>
+
+			
+
+				<li><a href="/faq/">FAQ</a></li>
+
+			
+
+				<li><a href="/privacy/">Privacy Policy</a></li>
+
+			
+
+				<li><a href="/terms/">Terms of Service</a></li>
+
+			
+
+				<li><a href="/shop/">Shop</a></li>
+
+			
+
+				<li><a href="/news/">News</a></li>
+
+			
+
+				<li><a href="/events/">Events</a></li>
+
+			
+
+		</ul>
+
+	</div>
+	
+</nav>
+<!-- ===== /Main Navigation ===== -->
+
+	<!-- ===== Search Form ===== -->
+<div id="search-form" class="search-form hidden" data-toggle-target aria-hidden="true">
+	<form class="flex items-stretch w-full rounded-full bg-blaga-100 h-10" action="#">
+		<input class="w-full h-full block px-6 py-2 focus:outline-none rounded-l-full" type="search" placeholder="Search...">
 		<button
-			class="search-toggle toggle-button bg-blaga-100"
+			class="search-submit bg-primary text-white hover:bg-primary active:bg-blawu shrink-0"
+			type="submit"
+			aria-label="Search"
+		>
+			<span class="search-icon" aria-hidden="true"></span>
+		</button>
+	</form>
+</div>
+<!-- ===== /Search Form ===== -->
+
+
+	<div class="ml-auto z-20">
+		<button
+			class="search-toggle bg-blaga-100 text-blaga-800 hover:bg-primary active:bg-blawu hover:text-white toggle-button"
 			data-target="search-form"
 			type="button"
 			aria-label="Toggle search form"
@@ -130,7 +193,6 @@
   </div>
 
 </header>
-
 <!-- ===== /Site Header Default ===== -->
 
 		<main id="content">
