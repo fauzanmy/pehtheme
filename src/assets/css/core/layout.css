@@ -1,4 +1,8 @@
-/* layout.css */
+	/**
+	* Layout
+	* 
+	* Pehtheme HTML
+	*/
 
 @layer components {
 
@@ -11,7 +15,11 @@
 		@apply py-2 md:py-4;
 	}
 
-	.grid {
-		@apply grid gap-4 md:gap-6 lg:gap-8;	}
+	/**
+	* Two-column layout with a flexible main column and fixed-width sidebar.
+	*/
+	.layout-sidebar {
+		@apply grid gap-4 md:gap-6 lg:grid-cols-[minmax(0,1fr)_20rem];
+	}
 
 }

@@ -237,10 +237,10 @@
 </div>
 <!-- ===== /Breadcrumb ===== -->
 
-		<div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+		<div class="layout-sidebar">
 
 			<!-- ===== Article ===== -->
-			<article class="post col-span-12 md:col-span-8 border">
+			<article class="post border">
 
 				<div class="entry-content text-wrap">
 					<h1>The Ultimate Guide to Modern Web Development</h1>
@@ -312,7 +312,7 @@
 			<!-- ===== /Article ===== -->
 
 			<!-- ===== Sidebar ===== -->
-<aside class="col-span-12 md:col-span-4 border">
+<aside class="border">
 	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic numquam soluta vero, neque, quis quae et modi quasi officiis esse illo temporibus velit, nam voluptate doloribus dolor dicta voluptatem ullam.</p>
 </aside>
 <!-- ===== /Sidebar ===== -->
@@ -327,24 +327,38 @@
 		<!-- ===== Footer ===== -->
 <footer class="site-footer bg-blaga-100/50">
   <div class="inner">
-	<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_320px]">
-	  <div>
+
+	<div class="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.9fr)]">
+		
+	  <div class="border">
 		<h2 class="text-lg font-semibold text-slate-900">Pehtheme</h2>
-		<p class="mt-3 max-w-xl text-sm leading-7 text-red-600">
+		<p class="site info">
 		Pehtheme static HTML template powered by Eleventy, Nunjucks, and Tailwind CSS.
 		</p>
 	  </div>
 
-	  <div class="space-y-2 text-sm text-slate-600">
-		<p><strong class="text-slate-900">Email:</strong> hello@example.com</p>
-		<p><strong class="text-slate-900">Phone:</strong> +62 812 3456 7890</p>
-		<p><strong class="text-slate-900">Location:</strong> Banda Aceh, Indonesia</p>
-	  </div>
+	  	<div class="grid gap-6 sm:grid-cols-2">
+
+		  <div class="space-y-2 text-sm text-slate-600 border">
+			  <p><strong class="text-slate-900">Email:</strong> hello@example.com</p>
+			  <p><strong class="text-slate-900">Phone:</strong> +62 812 3456 7890</p>
+			  <p><strong class="text-slate-900">Location:</strong> Banda Aceh, Indonesia</p>
+			</div>
+			
+			<div class="border">
+				<ul>
+					<li>Menu 1</li>
+					<li>Menu 2</li>
+				</ul>
+			</div>
+		</div>
+
 	</div>
 
 	<div class="mt-8 border-t border-slate-200 pt-6 text-sm text-slate-500">
 	  <p>&copy; 2026 Pehtheme. Built with Eleventy, Nunjucks, and Tailwind CSS.</p>
 	</div>
+
   </div>
 </footer>
 <!-- ===== /Footer ===== -->
