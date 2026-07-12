@@ -294,10 +294,10 @@
   content: "";
   position: absolute;
   right: 2.5px;
-  bottom: calc(1px * -1);
+  bottom: -1px;
   display: block;
-  height: 10px;
-  rotate: -45deg;
+  height: 1px;
+  rotate: 45deg;
   border-radius: calc(infinity * 1px);
   border-style: var(--tw-border-style);
   border-width: 2px;
