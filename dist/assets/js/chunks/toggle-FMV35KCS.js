@@ -1,4 +1,4 @@
-// src/assets/js/components/toggle-v8.js
+// src/assets/js/components/toggle.js
 var overlayElement = document.getElementById("overlay");
 var OPEN_TOGGLE_SELECTOR = "[data-toggle-target]:not(.hidden)";
 function toggleTargets(targetElements, triggerButton) {

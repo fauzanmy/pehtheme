@@ -4,5 +4,6 @@ import {
 
 // src/assets/js/app-module.js
 domReady(async () => {
-  await import("./chunks/toggle-v8-KZHINCVW.js");
+  await import("./chunks/theme-toggle-5Z3SBYOS.js");
+  await import("./chunks/toggle-FMV35KCS.js");
 });

@@ -25,6 +25,14 @@
 
 	<link rel="icon" href="/assets/icons/egg-fried.svg" type="image/svg+xml">
 
+	<script>
+		(function () {
+			const stored = localStorage.getItem('theme');
+			const isDark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+			document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+		})();
+	</script>
+
 </head>
 
 <body>
