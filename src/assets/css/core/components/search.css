@@ -21,8 +21,8 @@
 .search-icon::after {
 	content: "";
 	@apply
-		absolute right-[2.5px] -bottom-px block h-px
-		rotate-45 rounded-full border-2 border-current
+		absolute right-[2.5px] -bottom-px block h-2.5
+		-rotate-45deg rounded-full border-2 border-current
 	;
 }
 

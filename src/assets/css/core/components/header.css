@@ -6,7 +6,7 @@
  
 @layer components {
 	.site-header {
-		@apply sticky top-0 z-40 bg-white/50 backdrop-blur-md border border-white/20 shadow-sm;
+		@apply sticky top-0 z-40 bg-white/50 backdrop-blur-md border border-blaga-100/20 shadow-sm dark:bg-blaga-950/90 dark:border-blaga-800/80;
 	}
 
 	/* .site-branding {} */

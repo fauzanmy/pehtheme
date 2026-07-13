@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
-	<symbol id="sun" viewBox="0 0 16 16">
+	<symbol id="sun" viewBox="0 0 16 16" fill="currentColor">
 		<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
 	</symbol>
 
-	<symbol id="moon" viewBox="0 0 16 16">
+	<symbol id="moon" viewBox="0 0 16 16" fill="currentColor">
 		<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
 	</symbol>
 </svg>
@@ -15,7 +15,7 @@
 
 	<div class="site-branding flex items-center justify-center space-x-2 pr-4">
 
-		<button class="flex items-center justify-center space-x-2 px-4 h-10 pl-3 pr-1 bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 rounded-full group cursor-pointer toggle-button" data-target="main-navigation">
+		<button class="flex items-center justify-center space-x-2 px-4 h-10 pl-3 pr-1 bg-blaga-100/69 hover:bg-blaga-100/69 active:bg-blaga-100/69 rounded-full group cursor-pointer toggle-button dark:bg-blaga-800 dark:hover:bg-blaga-800/69" data-target="main-navigation">
 			<svg class="size-6" aria-hidden="true">
 				<use href="/assets/icons/sprite.svg#list"></use>
 			</svg>
@@ -27,7 +27,7 @@
 			</span>
 		</button>
 	  
-		<a href="/" class="site-title rounded-full px-4 h-10 flex items-center bg-blaga-100/69 hover:bg-blaga-100/89 active:bg-blaga-100/69 leading-0">
+		<a href="/" class="site-title rounded-full px-4 h-10 flex items-center bg-blaga-100/69 active:bg-blaga-100/69 dark:bg-blaga-800 leading-0 dark:hover:bg-blaga-800/69 dark:hover:text-blaga-100/69">
 			{{ site.name }}
 		</a>
 
@@ -45,14 +45,14 @@
 
 	<div class="ml-auto z-20 flex items-center">
 
-		<button class="theme-toggle flex items-center justify-center cursor-pointer size-10 hover:bg-blaga-100/69 active:bg-primary rounded-full transition-colors">
-			<svg class="size-5.5" aria-hidden="true">
+		<button class="theme-toggle flex items-center justify-center cursor-pointer size-10 hover:bg-blaga-100/69 active:bg-primary rounded-full transition-colors dark:hover:bg-blaga-800/69">
+			<svg class="size-5.5 text-blaga-900 dark:text-blaga-100" aria-hidden="true">
 				<use href="#sun"></use>
 			</svg>
 		</button>
 
 		<button
-			class="search-toggle text-blaga-800 hover:bg-blaga-100/69 active:blaga-100/69 toggle-button"
+			class="search-toggle text-blaga-800 hover:bg-blaga-100/69 active:blaga-100/69 toggle-button dark:text-blaga-100 dark:hover:bg-blaga-800/69"
 			data-target="search-form"
 			type="button"
 			aria-label="Toggle search form"
