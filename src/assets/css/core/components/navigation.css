@@ -8,7 +8,7 @@
 	.navigation {
 		@apply
 			absolute 
-			left-4 md:left-6 lg:left-8 right-4 md:right-6 lg:right-8
+			left-4 md:left-6 lg:left-8 right-4 md:right-6 lg:right-8 z-30
 		;
 	}	
 }
